@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hermes-hm26q3",
+  "compatibility_date": "2026-07-14",
+  "observability": { "enabled": true },
+  "assets": { "directory": "dist" },
+  "compatibility_flags": ["nodejs_compat"]
+}

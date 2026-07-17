@@ -1,0 +1,37 @@
+/* Hermes Agent deck — global styles */
+:root {
+  --slidev-theme-primary: #FF6B35;
+  --accent-orange: #FF6B35;
+  --accent-orange-hover: #FF8C42;
+  --soft-grey: #F8F8F8;
+  --soft-bg: #FFF8F4;
+  --dark-text: #2C2C2C;
+  --muted-text: #6B6B6B;
+  --caption-grey: #999;
+  --code-bg: #1E1E1E;
+  --code-text: #E6E6E6;
+  --prompt-orange: #FF8C42;
+  --terminal-prompt: #5EC4A8;
+  --card-border: #ECECEC;
+  --card-bg: #FFFFFF;
+  --good: #4FA85C;
+  --warn: #D9A93B;
+  --bad: #D8556A;
+}
+.slidev-layout {
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--soft-bg) 100%);
+  font-family: 'Nunito Sans', 'Inter', system-ui, -apple-system, sans-serif;
+}
+h1, h2, h3 { color: var(--dark-text); }
+h1 strong, h2 strong { color: var(--accent-orange); }
+h1 { letter-spacing: -0.5px; }
+h2 { letter-spacing: -0.3px; }
+/* Prevent inline <code> chips inside h1/h2 from showing a grey code-bg box */
+h1 code, h2 code, h3 code {
+  background: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+}
