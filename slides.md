@@ -315,3 +315,93 @@ Find <code>Hermes-Desktop-Setup.exe</code> in your <strong style="color: #2C2C2C
 </div>
 
 <div class="cl-footer-meta">Step 2 of 6 · next: approve the UAC prompt · troubleshooting: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation" target="_blank" style="color: #888; text-decoration: none;">installation guide</a></div>
+
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-INS-03 · v1</div>
+
+# Step 3 of 6 — Approve the UAC prompt
+
+Windows asks: <em>"Do you want to allow this app to make changes to your device?"</em> Click <strong style="color: #FF6B35;">Yes</strong>.
+
+<div class="grid grid-cols-2 gap-8" style="margin-top: 18px; align-items: stretch;">
+
+  <!-- LEFT: UAC dialog mock -->
+  <div>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 6px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.18); max-width: 420px;">
+      <!-- title bar -->
+      <div style="background: #F0F0F0; padding: 6px 10px; border-bottom: 1px solid #DCDCDC; font-size: 10.5px; color: #555; display: flex; align-items: center; justify-content: space-between;">
+        <span style="font-weight: 600;">User Account Control</span>
+        <span style="font-size: 9px;">×</span>
+      </div>
+      <!-- dialog body -->
+      <div style="padding: 22px 24px;">
+        <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 22px;">
+          <!-- blue/yellow shield -->
+          <div style="width: 44px; height: 44px; flex-shrink: 0; background: linear-gradient(180deg, #FFC107 0%, #FFA000 50%, #FF8F00 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 0 3px rgba(255,255,255,0.4), 0 2px 6px rgba(0,0,0,0.15); position: relative;">
+            <div style="width: 18px; height: 18px; background: linear-gradient(180deg, #1976D2 0%, #1565C0 100%); border-radius: 50%; position: relative;">
+              <div style="position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%); width: 8px; height: 8px; background: #1565C0; border-radius: 0 0 4px 4px;"></div>
+            </div>
+          </div>
+          <div style="flex: 1;">
+            <div style="font-size: 14.5px; font-weight: 600; color: #2C2C2C; line-height: 1.35; margin-bottom: 8px;">Do you want to allow this app to make changes to your device?</div>
+            <div style="font-size: 12px; color: #555; line-height: 1.5;">
+              Program name: <strong style="color: #2C2C2C;">Hermes-Desktop-Setup.exe</strong><br>
+              Verified publisher: <strong style="color: #2C2C2C;">Nous Research</strong><br>
+              File origin: <span style="color: #2C2C2C;">Hard drive on this computer</span>
+            </div>
+            <div style="font-size: 11px; color: #777; margin-top: 10px; padding-top: 10px; border-top: 1px solid #ECECEC; line-height: 1.45;">
+              <strong style="color: #555;">Show details</strong>
+            </div>
+          </div>
+        </div>
+        <!-- buttons -->
+        <div style="display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 12px;">
+          <span style="padding: 7px 22px; background: #F0F0F0; border: 1px solid #C8C8C8; border-radius: 3px; font-size: 12.5px; color: #2C2C2C; box-shadow: inset 0 1px 0 white;">No</span>
+          <span style="padding: 7px 22px; background: linear-gradient(180deg, #F0F0F0 0%, #E0E0E0 100%); border: 1px solid #0078D7; border-radius: 3px; font-size: 12.5px; color: #2C2C2C; box-shadow: 0 0 0 2px rgba(0,120,215,0.25), inset 0 1px 0 white; font-weight: 500;">Yes</span>
+        </div>
+        <!-- annotated markup overlay -->
+        <div style="padding-top: 12px; border-top: 1px dashed #FF6B35; text-align: center;">
+          <div style="display: inline-block; background: #FF6B35; color: white; border-radius: 50%; width: 22px; height: 22px; line-height: 22px; font-size: 12px; font-weight: 700; margin-right: 6px;">1</div>
+          <span style="font-size: 12px; color: #2C2C2C; font-weight: 600;">Click <strong style="color: #FF6B35;">Yes</strong> — the installer needs to write to <code>Program Files</code> and the Start menu.</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; font-size: 11px; color: #999; margin-top: 8px; font-style: italic;">Mock-up of the Windows User Account Control dialog</div>
+  </div>
+
+  <!-- RIGHT: numbered instructions -->
+  <div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        After SmartScreen is past, Windows shows a <strong style="color: #2C2C2C;">blue-and-yellow shield</strong> in the middle of the screen. Don't click away — it will time out in 60 seconds.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        Read the verified publisher line: it should say <strong style="color: #2C2C2C;">Nous Research</strong>. If the publisher is unknown or blank, click <strong style="color: #FF6B35;">No</strong> and re-download.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        Click <strong style="color: #FF6B35;">Yes</strong>. The installer needs to register a Start menu entry, write the CLI to your PATH, and create the <code>~/.hermes\</code> config dir.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 14px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        Next: <strong style="color: #2C2C2C;">the installer UI appears</strong> in Step 4.
+      </div>
+    </div>
+    <div style="margin-top: 18px; padding: 12px 14px; background: rgba(124, 58, 237, 0.06); border-left: 3px solid #7C3AED; border-radius: 6px; font-size: 12.5px; color: #4A4A4A;">
+      <strong style="color: #7C3AED;">Stuck behind a work account?</strong> Corporate machines sometimes block UAC entirely. If you never see this prompt, ask IT to allow <code>Hermes-Desktop-Setup.exe</code> via Group Policy, or install the per-user CLI build via PowerShell instead.
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 3 of 6 · next: installer UI appears · if UAC never shows: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation#troubleshooting" target="_blank" style="color: #888; text-decoration: none;">troubleshooting</a></div>
