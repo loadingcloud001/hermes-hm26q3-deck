@@ -405,3 +405,101 @@ Windows asks: <em>"Do you want to allow this app to make changes to your device?
 </div>
 
 <div class="cl-footer-meta">Step 3 of 6 · next: installer UI appears · if UAC never shows: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation#troubleshooting" target="_blank" style="color: #888; text-decoration: none;">troubleshooting</a></div>
+
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-INS-04 · v1</div>
+
+# Step 4 of 6 — Wait for the installer to finish
+
+The installer runs unattended. Watch the progress, don't close the window — it usually takes 1–3 minutes.
+
+<div class="grid grid-cols-2 gap-8" style="margin-top: 18px; align-items: stretch;">
+
+  <!-- LEFT: installer UI mock -->
+  <div>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); max-width: 440px;">
+      <!-- title bar -->
+      <div style="background: linear-gradient(180deg, #FAFAFA 0%, #ECECEC 100%); padding: 7px 12px; border-bottom: 1px solid #DCDCDC; font-size: 11px; color: #444; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="display: inline-block; width: 14px; height: 14px; background: #FF6B35; border-radius: 3px;"></span>
+          <span style="font-weight: 600;">Hermes Desktop Setup</span>
+        </div>
+        <span style="font-size: 10px;">×</span>
+      </div>
+      <!-- body -->
+      <div style="padding: 22px 24px 18px;">
+        <!-- icon + heading -->
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+          <div style="width: 48px; height: 48px; border-radius: 10px; background: #FF6B35; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(255,107,53,0.25); flex-shrink: 0;">
+            <span style="color: white; font-size: 22px; font-weight: 700;">H</span>
+          </div>
+          <div>
+            <div style="font-size: 15px; font-weight: 600; color: #2C2C2C; line-height: 1.25;">Installing Hermes Desktop…</div>
+            <div style="font-size: 11.5px; color: #888; margin-top: 2px;">This may take a few minutes.</div>
+          </div>
+        </div>
+        <!-- progress bar -->
+        <div style="margin-bottom: 8px;">
+          <div style="background: #F0F0F0; border-radius: 6px; height: 9px; overflow: hidden; box-shadow: inset 0 1px 2px rgba(0,0,0,0.06);">
+            <div style="background: linear-gradient(90deg, #FF6B35 0%, #FF8C42 100%); height: 100%; width: 62%; border-radius: 6px; box-shadow: 0 0 8px rgba(255,107,53,0.4);"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: 5px; font-size: 10.5px; color: #666;">
+            <span>62%</span>
+            <span>~ 1 min remaining</span>
+          </div>
+        </div>
+        <!-- status steps -->
+        <div style="margin-top: 12px; padding: 10px 12px; background: #FAFAFA; border: 1px solid #ECECEC; border-radius: 6px;">
+          <div style="font-size: 10px; color: #888; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 6px; font-weight: 600;">Status</div>
+          <div style="font-size: 11.5px; color: #555; line-height: 1.55;">
+            <div><span style="color: #4FA85C; font-weight: 700;">✓</span> Python 3.11 · Node.js v22 · ripgrep · ffmpeg</div>
+            <div><span style="color: #FF8C42; font-weight: 700;">⟳</span> Cloning <code style="font-size: 10.5px;">hermes-agent</code> repository…</div>
+            <div style="color: #AAA;">○ Setting up virtual environment · PATH · Start menu</div>
+          </div>
+        </div>
+        <!-- annotated markup overlay -->
+        <div style="padding-top: 10px; margin-top: 10px; border-top: 1px dashed #FF6B35; text-align: center;">
+          <div style="display: inline-block; background: #FF6B35; color: white; border-radius: 50%; width: 20px; height: 20px; line-height: 20px; font-size: 11px; font-weight: 700; margin-right: 6px;">1</div>
+          <span style="font-size: 11.5px; color: #2C2C2C; font-weight: 600;">Leave it alone — let the bar reach 100%</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; font-size: 11px; color: #999; margin-top: 8px; font-style: italic;">Mock-up of the Hermes Desktop installer window</div>
+  </div>
+
+  <!-- RIGHT: numbered instructions -->
+  <div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        <strong style="color: #2C2C2C;">Don't close the window.</strong> The installer is downloading Python, Node.js, ripgrep, ffmpeg, cloning the repo, and writing to your system PATH.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        Watch the <strong style="color: #FF6B35;">status list</strong> to see what's happening. The <span style="color: #4FA85C; font-weight: 700;">✓</span> marks are done, <span style="color: #FF8C42; font-weight: 700;">⟳</span> is in-progress, <span style="color: #AAA;">○</span> is queued.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        If your laptop goes to sleep during install, the install may hang. Keep it awake — plug in the charger if it's a laptop.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 14px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        When the bar hits <strong style="color: #2C2C2C;">100%</strong>: a <strong style="color: #FF6B35;">Finish screen</strong> appears (Step 5).
+      </div>
+    </div>
+    <div style="margin-top: 16px; padding: 11px 14px; background: rgba(124, 58, 237, 0.06); border-left: 3px solid #7C3AED; border-radius: 6px; font-size: 12px; color: #4A4A4A; line-height: 1.5;">
+      <strong style="color: #7C3AED;">Antivirus may flag the Git clone step</strong> — if the bar stalls on <em>"Cloning repository"</em> for 5+ min, see the <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation#troubleshooting" target="_blank" style="color: #7C3AED; font-weight: 600;">troubleshooting page</a>.
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 4 of 6 · next: finish screen · if the bar stalls: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation#troubleshooting" target="_blank" style="color: #888; text-decoration: none;">troubleshooting</a></div>
