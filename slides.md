@@ -185,19 +185,21 @@ Go to <code>hermes-agent.nousresearch.com</code> in your browser. Click the oran
           <span style="display: inline-block; width: 22px; height: 22px; background: #FF6B35; border-radius: 6px;"></span>
           <span style="font-weight: 700; font-size: 14px; color: #2C2C2C;">Hermes Agent</span>
         </div>
-        <div style="font-size: 11px; color: #888;">Docs · GitHub · Discord</div>
+        <div style="font-size: 11px; color: #888;">
+          <a href="https://hermes-agent.nousresearch.com/docs" target="_blank" style="color: #888; text-decoration: none;">Docs</a> · <a href="https://github.com/hermes-agent" target="_blank" style="color: #888; text-decoration: none;">GitHub</a> · <a href="https://discord.gg/hermes-agent" target="_blank" style="color: #888; text-decoration: none;">Discord</a>
+        </div>
       </div>
       <!-- page body -->
       <div style="padding: 32px 24px; text-align: center;">
         <div style="font-size: 11px; color: #888; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">W I N D O W S  ·  D E S K T O P</div>
         <div style="font-size: 22px; font-weight: 700; color: #2C2C2C; line-height: 1.2; margin-bottom: 18px;">Your AI agent,<br>on your machine.</div>
-        <div style="display: inline-block; background: #FF6B35; color: white; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 600; box-shadow: 0 4px 12px rgba(255,107,53,0.35);">
+        <a href="https://hermes-agent.nousresearch.com/download" target="_blank" style="display: inline-block; background: #FF6B35; color: white; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 600; box-shadow: 0 4px 12px rgba(255,107,53,0.35); text-decoration: none;">
           ⬇ Download for Windows
-        </div>
+        </a>
         <div style="font-size: 10px; color: #888; margin-top: 10px;">Hermes-Desktop-Setup.exe · ~240 MB · Windows 10 / 11</div>
       </div>
     </div>
-    <div style="text-align: center; font-size: 11px; color: #999; margin-top: 8px; font-style: italic;">Mock-up of the hermes-agent.nousresearch.com landing page</div>
+    <div style="text-align: center; font-size: 11px; color: #999; margin-top: 8px; font-style: italic;">Mock-up of <a href="https://hermes-agent.nousresearch.com" target="_blank" style="color: #FF6B35; text-decoration: none;">hermes-agent.nousresearch.com</a></div>
   </div>
 
   <!-- RIGHT: numbered instructions -->
@@ -205,10 +207,10 @@ Go to <code>hermes-agent.nousresearch.com</code> in your browser. Click the oran
     <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px;">
       <span class="cl-num-badge">1</span>
       <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Open <strong style="color: #2C2C2C;">Edge</strong> or <strong style="color: #2C2C2C;">Chrome</strong> and go to:
-        <div style="background: #1E1E1E; color: #E6E6E6; border-radius: 6px; padding: 8px 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; margin-top: 8px;">
-          https://hermes-agent.nousresearch.com
-        </div>
+        Open <strong style="color: #2C2C2C;">Edge</strong> or <strong style="color: #2C2C2C;">Chrome</strong> and visit:
+        <a href="https://hermes-agent.nousresearch.com" target="_blank" style="display: block; background: #1E1E1E; color: #FF8C42; border-radius: 6px; padding: 8px 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; margin-top: 8px; text-decoration: none; word-break: break-all;">
+          ↗ https://hermes-agent.nousresearch.com
+        </a>
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px;">
@@ -235,4 +237,81 @@ Go to <code>hermes-agent.nousresearch.com</code> in your browser. Click the oran
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 1 of 6 · next: open the installer</div>
+<div class="cl-footer-meta">Step 1 of 6 · next: open the installer · full guide: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation" target="_blank" style="color: #888; text-decoration: none;">installation</a></div>
+
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-INS-02 · v1</div>
+
+# Step 2 of 6 — Open the installer
+
+Find <code>Hermes-Desktop-Setup.exe</code> in your <strong style="color: #2C2C2C;">Downloads</strong> folder and double-click it.
+
+<div class="grid grid-cols-2 gap-8" style="margin-top: 18px; align-items: stretch;">
+
+  <!-- LEFT: Windows SmartScreen mock -->
+  <div>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.10);">
+      <!-- title bar -->
+      <div style="background: #F4F4F4; padding: 8px 12px; border-bottom: 1px solid #E5E5E5; font-size: 11px; color: #666;">
+        Microsoft Defender SmartScreen
+      </div>
+      <!-- dialog body -->
+      <div style="padding: 28px 28px 22px;">
+        <!-- blue shield -->
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
+          <div style="width: 36px; height: 36px; border-radius: 50%; background: #2D7DD2; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; font-weight: 700;">ⓘ</div>
+          <div>
+            <div style="font-size: 15px; font-weight: 600; color: #2C2C2C;">Windows protected your PC</div>
+            <div style="font-size: 12px; color: #666; margin-top: 2px;">Microsoft Defender SmartScreen prevented an unrecognized app from starting</div>
+          </div>
+        </div>
+        <div style="background: #FAFAFA; border: 1px solid #ECECEC; border-radius: 6px; padding: 12px 14px; font-size: 12.5px; color: #4A4A4A; line-height: 1.5; margin-bottom: 16px;">
+          Running this app might put your PC at risk. The app is not signed by a publisher we recognize. The publisher is <strong style="color: #2C2C2C;">Nous Research</strong>.
+        </div>
+        <div style="display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 12px;">
+          <span style="padding: 7px 14px; background: #F4F4F4; border: 1px solid #D0D0D0; border-radius: 4px; font-size: 12.5px; color: #2C2C2C;">Don't run</span>
+          <span style="padding: 7px 14px; background: #F4F4F4; border: 1px solid #D0D0D0; border-radius: 4px; font-size: 12.5px; color: #2C2C2C;">Run anyway</span>
+        </div>
+        <div style="padding-top: 12px; border-top: 1px dashed #FF6B35; text-align: center;">
+          <div style="display: inline-block; background: #FF6B35; color: white; border-radius: 50%; width: 22px; height: 22px; line-height: 22px; font-size: 12px; font-weight: 700; margin-right: 6px;">1</div>
+          <span style="font-size: 12px; color: #2C2C2C; font-weight: 600;">Click here first — <em style="color: #FF6B35;">"More info"</em> expands the dialog</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; font-size: 11px; color: #999; margin-top: 8px; font-style: italic;">Mock-up of the Windows SmartScreen warning</div>
+  </div>
+  <div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        Press <kbd style="background: #F4F4F4; border: 1px solid #D0D0D0; border-radius: 3px; padding: 1px 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px;">Ctrl</kbd> + <kbd style="background: #F4F4F4; border: 1px solid #D0D0D0; border-radius: 3px; padding: 1px 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px;">J</kbd> to open <strong style="color: #2C2C2C;">Downloads</strong> in File Explorer. Or click the download bar at the bottom of your browser.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        <strong style="color: #2C2C2C;">Double-click</strong> <code>Hermes-Desktop-Setup.exe</code>.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        If you see <strong style="color: #2C2C2C;">"Windows protected your PC"</strong> (SmartScreen): click <strong style="color: #FF6B35;">More info</strong>, then click <strong style="color: #FF6B35;">Run anyway</strong>. This is normal for new Windows installers from publishers we don't recognise yet.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
+        Next: <strong style="color: #2C2C2C;">approve the UAC prompt</strong> in Step 3.
+      </div>
+    </div>
+    <div style="padding: 12px 14px; background: rgba(255, 107, 53, 0.06); border-left: 3px solid #FF6B35; border-radius: 6px; font-size: 12.5px; color: #4A4A4A;">
+      <strong style="color: #FF6B35;">Why this appears:</strong> SmartScreen blocks every .exe it hasn't seen millions of times. Hermes Desktop is new — the warning will disappear once enough people install it.
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 2 of 6 · next: approve the UAC prompt · troubleshooting: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation" target="_blank" style="color: #888; text-decoration: none;">installation guide</a></div>
