@@ -157,349 +157,590 @@ layout: default
 
 ---
 layout: default
+
+# ===== NEW INSTALL SECTION — uses real screenshots from user's recording =====
+
 ---
 
 <div class="cl-ref-id">HM26Q3-INS-01 · v1</div>
 
-# Step 1 of 6 — Download the installer
+# Step 1 of 4 — Visit the homepage
 
-Go to <code>hermes-agent.nousresearch.com</code> in your browser. Click the orange <strong style="color: #2C2C2C;">Download for Windows</strong> button.
+Go to <code>hermes-agent.nousresearch.com</code> in Edge or Chrome. The site shows three download paths.
 
-<div class="grid grid-cols-2 gap-8" style="margin-top: 18px; align-items: stretch;">
-
-  <!-- LEFT: the website mock -->
-  <div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.06);">
-      <!-- fake browser chrome -->
-      <div style="background: #F4F4F4; padding: 8px 12px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #E5E5E5;">
-        <span style="width: 10px; height: 10px; border-radius: 50%; background: #FF5F57;"></span>
-        <span style="width: 10px; height: 10px; border-radius: 50%; background: #FEBC2E;"></span>
-        <span style="width: 10px; height: 10px; border-radius: 50%; background: #28C840;"></span>
-        <div style="flex: 1; background: white; border-radius: 5px; padding: 4px 10px; font-size: 11px; color: #555; font-family: 'JetBrains Mono', monospace; margin-left: 8px;">
-          🔒 https://hermes-agent.nousresearch.com
-        </div>
-      </div>
-      <!-- page header -->
-      <div style="padding: 14px 18px; border-bottom: 1px solid #F0F0F0; display: flex; align-items: center; justify-content: space-between;">
-        <div style="display: flex; align-items: center; gap: 8px;">
-          <span style="display: inline-block; width: 22px; height: 22px; background: #FF6B35; border-radius: 6px;"></span>
-          <span style="font-weight: 700; font-size: 14px; color: #2C2C2C;">Hermes Agent</span>
-        </div>
-        <div style="font-size: 11px; color: #888;">
-          <a href="https://hermes-agent.nousresearch.com/docs" target="_blank" style="color: #888; text-decoration: none;">Docs</a> · <a href="https://github.com/hermes-agent" target="_blank" style="color: #888; text-decoration: none;">GitHub</a> · <a href="https://discord.gg/hermes-agent" target="_blank" style="color: #888; text-decoration: none;">Discord</a>
-        </div>
-      </div>
-      <!-- page body -->
-      <div style="padding: 32px 24px; text-align: center;">
-        <div style="font-size: 11px; color: #888; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">W I N D O W S  ·  D E S K T O P</div>
-        <div style="font-size: 22px; font-weight: 700; color: #2C2C2C; line-height: 1.2; margin-bottom: 18px;">Your AI agent,<br>on your machine.</div>
-        <a href="https://hermes-agent.nousresearch.com/download" target="_blank" style="display: inline-block; background: #FF6B35; color: white; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 600; box-shadow: 0 4px 12px rgba(255,107,53,0.35); text-decoration: none;">
-          ⬇ Download for Windows
-        </a>
-        <div style="font-size: 10px; color: #888; margin-top: 10px;">Hermes-Desktop-Setup.exe · ~240 MB · Windows 10 / 11</div>
-      </div>
-    </div>
-    <div style="text-align: center; font-size: 11px; color: #999; margin-top: 8px; font-style: italic;">Mock-up of <a href="https://hermes-agent.nousresearch.com" target="_blank" style="color: #FF6B35; text-decoration: none;">hermes-agent.nousresearch.com</a></div>
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/install-steps/01-download-page.png" style="display: block; width: 100%; height: auto;" />
   </div>
-
-  <!-- RIGHT: numbered instructions -->
-  <div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px;">
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">Pick your platform</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">1</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Open <strong style="color: #2C2C2C;">Edge</strong> or <strong style="color: #2C2C2C;">Chrome</strong> and visit:
-        <a href="https://hermes-agent.nousresearch.com" target="_blank" style="display: block; background: #1E1E1E; color: #FF8C42; border-radius: 6px; padding: 8px 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; margin-top: 8px; text-decoration: none; word-break: break-all;">
-          ↗ https://hermes-agent.nousresearch.com
-        </a>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Open <strong style="color: #2C2C2C;">Edge</strong> and visit <a href="https://hermes-agent.nousresearch.com" target="_blank" style="color: #FF6B35; font-weight: 600;">hermes-agent.nousresearch.com</a>.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">2</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Click the orange <strong style="color: #FF6B35;">Download for Windows</strong> button. Your browser saves <code>Hermes-Desktop-Setup.exe</code> to <strong style="color: #2C2C2C;">Downloads</strong>.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Three download cards appear: <strong style="color: #2C2C2C;">macOS</strong>, <strong style="color: #FF6B35;">Windows</strong>, <strong style="color: #2C2C2C;">Linux</strong>. Click <strong style="color: #FF6B35;">DOWNLOAD</strong> under Windows.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">3</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Wait for the download to finish. The file is roughly <strong style="color: #2C2C2C;">240 MB</strong> — usually under 90 seconds on a home network.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Browser saves <code>Hermes-Setup.exe</code> to <strong style="color: #2C2C2C;">Downloads</strong>. ~240 MB.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
       <span class="cl-num-badge">4</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        When the download bar completes, leave the browser open for now — <strong style="color: #2C2C2C;">Step 2</strong> opens the file you just saved.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Or scroll down — there's an <strong style="color: #2C2C2C;">INSTALL FROM TERMINAL</strong> section with curl / iex commands if you prefer CLI.
       </div>
-    </div>
-    <div style="margin-top: 18px; padding: 12px 14px; background: rgba(124, 58, 237, 0.06); border-left: 3px solid #7C3AED; border-radius: 6px; font-size: 12.5px; color: #4A4A4A;">
-      <strong style="color: #7C3AED;">Don't have admin rights?</strong> Ask your IT team to install it for you. The installer writes to <code>%LOCALAPPDATA%</code> (no UAC), but the first run registers a Start menu entry that may need admin.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 1 of 6 · next: open the installer · full guide: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation" target="_blank" style="color: #888; text-decoration: none;">installation</a></div>
+<div class="cl-footer-meta">Step 1 of 4 · real recording frame · next: run the installer</div>
 
----
-layout: default
 ---
 
 <div class="cl-ref-id">HM26Q3-INS-02 · v1</div>
 
-# Step 2 of 6 — Open the installer
+# Step 2 of 4 — Run the installer
 
-Find <code>Hermes-Desktop-Setup.exe</code> in your <strong style="color: #2C2C2C;">Downloads</strong> folder and double-click it.
+Double-click <code>Hermes-Setup.exe</code> from your browser downloads. A 16-step installer dialog opens — let it run unattended.
 
-<div class="grid grid-cols-2 gap-8" style="margin-top: 18px; align-items: stretch;">
-
-  <!-- LEFT: Windows SmartScreen mock -->
-  <div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.10);">
-      <!-- title bar -->
-      <div style="background: #F4F4F4; padding: 8px 12px; border-bottom: 1px solid #E5E5E5; font-size: 11px; color: #666;">
-        Microsoft Defender SmartScreen
-      </div>
-      <!-- dialog body -->
-      <div style="padding: 28px 28px 22px;">
-        <!-- blue shield -->
-        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
-          <div style="width: 36px; height: 36px; border-radius: 50%; background: #2D7DD2; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; font-weight: 700;">ⓘ</div>
-          <div>
-            <div style="font-size: 15px; font-weight: 600; color: #2C2C2C;">Windows protected your PC</div>
-            <div style="font-size: 12px; color: #666; margin-top: 2px;">Microsoft Defender SmartScreen prevented an unrecognized app from starting</div>
-          </div>
-        </div>
-        <div style="background: #FAFAFA; border: 1px solid #ECECEC; border-radius: 6px; padding: 12px 14px; font-size: 12.5px; color: #4A4A4A; line-height: 1.5; margin-bottom: 16px;">
-          Running this app might put your PC at risk. The app is not signed by a publisher we recognize. The publisher is <strong style="color: #2C2C2C;">Nous Research</strong>.
-        </div>
-        <div style="display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 12px;">
-          <span style="padding: 7px 14px; background: #F4F4F4; border: 1px solid #D0D0D0; border-radius: 4px; font-size: 12.5px; color: #2C2C2C;">Don't run</span>
-          <span style="padding: 7px 14px; background: #F4F4F4; border: 1px solid #D0D0D0; border-radius: 4px; font-size: 12.5px; color: #2C2C2C;">Run anyway</span>
-        </div>
-        <div style="padding-top: 12px; border-top: 1px dashed #FF6B35; text-align: center;">
-          <div style="display: inline-block; background: #FF6B35; color: white; border-radius: 50%; width: 22px; height: 22px; line-height: 22px; font-size: 12px; font-weight: 700; margin-right: 6px;">1</div>
-          <span style="font-size: 12px; color: #2C2C2C; font-weight: 600;">Click here first — <em style="color: #FF6B35;">"More info"</em> expands the dialog</span>
-        </div>
-      </div>
-    </div>
-    <div style="text-align: center; font-size: 11px; color: #999; margin-top: 8px; font-style: italic;">Mock-up of the Windows SmartScreen warning</div>
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 400px;">
+    <img src="/install-steps/03-installer-running.png" style="display: block; max-width: 100%; max-height: 480px; height: auto;" />
   </div>
-  <div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">What the installer does</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">1</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Press <kbd style="background: #F4F4F4; border: 1px solid #D0D0D0; border-radius: 3px; padding: 1px 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px;">Ctrl</kbd> + <kbd style="background: #F4F4F4; border: 1px solid #D0D0D0; border-radius: 3px; padding: 1px 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px;">J</kbd> to open <strong style="color: #2C2C2C;">Downloads</strong> in File Explorer. Or click the download bar at the bottom of your browser.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Opens a window titled <strong style="color: #2C2C2C;">Hermes</strong> with 16 steps: Installing uv package manager · Verifying Python 3.11 · Installing Git · Detecting Node.js · Installing ripgrep and ffmpeg · Cloning Hermes repository · Creating Python virtual environment · Installing Python dependencies · Installing Node.js dependencies · Building desktop app · Adding Hermes to PATH · Writing configuration templates.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">2</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        <strong style="color: #2C2C2C;">Double-click</strong> <code>Hermes-Desktop-Setup.exe</code>.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Each step shows timing — e.g. <em>Verifying Python 3.11 · 957ms</em>. Total ~1–3 min.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">3</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        If you see <strong style="color: #2C2C2C;">"Windows protected your PC"</strong> (SmartScreen): click <strong style="color: #FF6B35;">More info</strong>, then click <strong style="color: #FF6B35;">Run anyway</strong>. This is normal for new Windows installers from publishers we don't recognise yet.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        <strong style="color: #2C2C2C;">Don't close it.</strong> The desktop app needs PATH entries, Start menu link, and the <code>~/.hermes/</code> config dir.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
       <span class="cl-num-badge">4</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Next: <strong style="color: #2C2C2C;">approve the UAC prompt</strong> in Step 3.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        On completion, a <strong style="color: #FF6B35;">Finish</strong> screen appears — click it to launch Hermes Desktop.
       </div>
-    </div>
-    <div style="padding: 12px 14px; background: rgba(255, 107, 53, 0.06); border-left: 3px solid #FF6B35; border-radius: 6px; font-size: 12.5px; color: #4A4A4A;">
-      <strong style="color: #FF6B35;">Why this appears:</strong> SmartScreen blocks every .exe it hasn't seen millions of times. Hermes Desktop is new — the warning will disappear once enough people install it.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 2 of 6 · next: approve the UAC prompt · troubleshooting: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation" target="_blank" style="color: #888; text-decoration: none;">installation guide</a></div>
+<div class="cl-footer-meta">Step 2 of 4 · real recording frame · next: Hermes Desktop launches</div>
 
----
-layout: default
 ---
 
 <div class="cl-ref-id">HM26Q3-INS-03 · v1</div>
 
-# Step 3 of 6 — Approve the UAC prompt
+# Step 3 of 4 — Hermes Desktop launches
 
-Windows asks: <em>"Do you want to allow this app to make changes to your device?"</em> Click <strong style="color: #FF6B35;">Yes</strong>.
+The installer finishes, the desktop app opens full-screen. A Nous Portal sign-in prompt appears with a 6-character code.
 
-<div class="grid grid-cols-2 gap-8" style="margin-top: 18px; align-items: stretch;">
-
-  <!-- LEFT: UAC dialog mock -->
-  <div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 6px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.18); max-width: 420px;">
-      <!-- title bar -->
-      <div style="background: #F0F0F0; padding: 6px 10px; border-bottom: 1px solid #DCDCDC; font-size: 10.5px; color: #555; display: flex; align-items: center; justify-content: space-between;">
-        <span style="font-weight: 600;">User Account Control</span>
-        <span style="font-size: 9px;">×</span>
-      </div>
-      <!-- dialog body -->
-      <div style="padding: 22px 24px;">
-        <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 22px;">
-          <!-- blue/yellow shield -->
-          <div style="width: 44px; height: 44px; flex-shrink: 0; background: linear-gradient(180deg, #FFC107 0%, #FFA000 50%, #FF8F00 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 0 3px rgba(255,255,255,0.4), 0 2px 6px rgba(0,0,0,0.15); position: relative;">
-            <div style="width: 18px; height: 18px; background: linear-gradient(180deg, #1976D2 0%, #1565C0 100%); border-radius: 50%; position: relative;">
-              <div style="position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%); width: 8px; height: 8px; background: #1565C0; border-radius: 0 0 4px 4px;"></div>
-            </div>
-          </div>
-          <div style="flex: 1;">
-            <div style="font-size: 14.5px; font-weight: 600; color: #2C2C2C; line-height: 1.35; margin-bottom: 8px;">Do you want to allow this app to make changes to your device?</div>
-            <div style="font-size: 12px; color: #555; line-height: 1.5;">
-              Program name: <strong style="color: #2C2C2C;">Hermes-Desktop-Setup.exe</strong><br>
-              Verified publisher: <strong style="color: #2C2C2C;">Nous Research</strong><br>
-              File origin: <span style="color: #2C2C2C;">Hard drive on this computer</span>
-            </div>
-            <div style="font-size: 11px; color: #777; margin-top: 10px; padding-top: 10px; border-top: 1px solid #ECECEC; line-height: 1.45;">
-              <strong style="color: #555;">Show details</strong>
-            </div>
-          </div>
-        </div>
-        <!-- buttons -->
-        <div style="display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 12px;">
-          <span style="padding: 7px 22px; background: #F0F0F0; border: 1px solid #C8C8C8; border-radius: 3px; font-size: 12.5px; color: #2C2C2C; box-shadow: inset 0 1px 0 white;">No</span>
-          <span style="padding: 7px 22px; background: linear-gradient(180deg, #F0F0F0 0%, #E0E0E0 100%); border: 1px solid #0078D7; border-radius: 3px; font-size: 12.5px; color: #2C2C2C; box-shadow: 0 0 0 2px rgba(0,120,215,0.25), inset 0 1px 0 white; font-weight: 500;">Yes</span>
-        </div>
-        <!-- annotated markup overlay -->
-        <div style="padding-top: 12px; border-top: 1px dashed #FF6B35; text-align: center;">
-          <div style="display: inline-block; background: #FF6B35; color: white; border-radius: 50%; width: 22px; height: 22px; line-height: 22px; font-size: 12px; font-weight: 700; margin-right: 6px;">1</div>
-          <span style="font-size: 12px; color: #2C2C2C; font-weight: 600;">Click <strong style="color: #FF6B35;">Yes</strong> — the installer needs to write to <code>Program Files</code> and the Start menu.</span>
-        </div>
-      </div>
-    </div>
-    <div style="text-align: center; font-size: 11px; color: #999; margin-top: 8px; font-style: italic;">Mock-up of the Windows User Account Control dialog</div>
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/install-steps/05-hermes-desktop-launched.png" style="display: block; width: 100%; height: auto;" />
   </div>
-
-  <!-- RIGHT: numbered instructions -->
-  <div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">Sign in to Nous Portal</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">1</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        After SmartScreen is past, Windows shows a <strong style="color: #2C2C2C;">blue-and-yellow shield</strong> in the middle of the screen. Don't click away — it will time out in 60 seconds.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Hermes Desktop opens full-screen. A sign-in window shows a <strong style="color: #FF6B35;">6-character code</strong> (e.g. <code>EK73-UAH</code>) — this is device-flow OAuth.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">2</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Read the verified publisher line: it should say <strong style="color: #2C2C2C;">Nous Research</strong>. If the publisher is unknown or blank, click <strong style="color: #FF6B35;">No</strong> and re-download.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        A browser window opens automatically to <code style="font-size: 12px;">portal.nousresearch.com/login</code>.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">3</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Click <strong style="color: #FF6B35;">Yes</strong>. The installer needs to register a Start menu entry, write the CLI to your PATH, and create the <code>~/.hermes\</code> config dir.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Type the 6-char code into the browser. Click <strong style="color: #FF6B35;">Authorize</strong>.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
       <span class="cl-num-badge">4</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Next: <strong style="color: #2C2C2C;">the installer UI appears</strong> in Step 4.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        The desktop app detects the auth and continues to model selection.
       </div>
-    </div>
-    <div style="margin-top: 18px; padding: 12px 14px; background: rgba(124, 58, 237, 0.06); border-left: 3px solid #7C3AED; border-radius: 6px; font-size: 12.5px; color: #4A4A4A;">
-      <strong style="color: #7C3AED;">Stuck behind a work account?</strong> Corporate machines sometimes block UAC entirely. If you never see this prompt, ask IT to allow <code>Hermes-Desktop-Setup.exe</code> via Group Policy, or install the per-user CLI build via PowerShell instead.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 3 of 6 · next: installer UI appears · if UAC never shows: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation#troubleshooting" target="_blank" style="color: #888; text-decoration: none;">troubleshooting</a></div>
+<div class="cl-footer-meta">Step 3 of 4 · real recording frame · next: pick a tier</div>
 
 ---
 layout: default
 ---
 
-<div class="cl-ref-id">HM26Q3-INS-04 · v1</div>
+<div style="position: absolute; inset: 0; background: #FF6B35; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 80px; text-align: center;">
 
-# Step 4 of 6 — Wait for the installer to finish
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 28px;">
+  S E C T I O N  ·  0 2
+</div>
 
-The installer runs unattended. Watch the progress, don't close the window — it usually takes 1–3 minutes.
+<h1 style="font-size: 60px; font-weight: 700; color: white; line-height: 1.1; margin: 0 0 20px; letter-spacing: -1.5px;">
+  Set up Nous Portal
+</h1>
 
-<div class="grid grid-cols-2 gap-8" style="margin-top: 18px; align-items: stretch;">
+<div style="font-size: 20px; font-weight: 400; color: white; opacity: 0.95; max-width: 600px; line-height: 1.4;">
+  Pick a tier. Subscribe. Get 300+ models + the Tool Gateway.
+</div>
 
-  <!-- LEFT: installer UI mock -->
-  <div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); max-width: 440px;">
-      <!-- title bar -->
-      <div style="background: linear-gradient(180deg, #FAFAFA 0%, #ECECEC 100%); padding: 7px 12px; border-bottom: 1px solid #DCDCDC; font-size: 11px; color: #444; display: flex; align-items: center; justify-content: space-between;">
-        <div style="display: flex; align-items: center; gap: 8px;">
-          <span style="display: inline-block; width: 14px; height: 14px; background: #FF6B35; border-radius: 3px;"></span>
-          <span style="font-weight: 600;">Hermes Desktop Setup</span>
-        </div>
-        <span style="font-size: 10px;">×</span>
-      </div>
-      <!-- body -->
-      <div style="padding: 22px 24px 18px;">
-        <!-- icon + heading -->
-        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-          <div style="width: 48px; height: 48px; border-radius: 10px; background: #FF6B35; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(255,107,53,0.25); flex-shrink: 0;">
-            <span style="color: white; font-size: 22px; font-weight: 700;">H</span>
-          </div>
-          <div>
-            <div style="font-size: 15px; font-weight: 600; color: #2C2C2C; line-height: 1.25;">Installing Hermes Desktop…</div>
-            <div style="font-size: 11.5px; color: #888; margin-top: 2px;">This may take a few minutes.</div>
-          </div>
-        </div>
-        <!-- progress bar -->
-        <div style="margin-bottom: 8px;">
-          <div style="background: #F0F0F0; border-radius: 6px; height: 9px; overflow: hidden; box-shadow: inset 0 1px 2px rgba(0,0,0,0.06);">
-            <div style="background: linear-gradient(90deg, #FF6B35 0%, #FF8C42 100%); height: 100%; width: 62%; border-radius: 6px; box-shadow: 0 0 8px rgba(255,107,53,0.4);"></div>
-          </div>
-          <div style="display: flex; justify-content: space-between; margin-top: 5px; font-size: 10.5px; color: #666;">
-            <span>62%</span>
-            <span>~ 1 min remaining</span>
-          </div>
-        </div>
-        <!-- status steps -->
-        <div style="margin-top: 12px; padding: 10px 12px; background: #FAFAFA; border: 1px solid #ECECEC; border-radius: 6px;">
-          <div style="font-size: 10px; color: #888; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 6px; font-weight: 600;">Status</div>
-          <div style="font-size: 11.5px; color: #555; line-height: 1.55;">
-            <div><span style="color: #4FA85C; font-weight: 700;">✓</span> Python 3.11 · Node.js v22 · ripgrep · ffmpeg</div>
-            <div><span style="color: #FF8C42; font-weight: 700;">⟳</span> Cloning <code style="font-size: 10.5px;">hermes-agent</code> repository…</div>
-            <div style="color: #AAA;">○ Setting up virtual environment · PATH · Start menu</div>
-          </div>
-        </div>
-        <!-- annotated markup overlay -->
-        <div style="padding-top: 10px; margin-top: 10px; border-top: 1px dashed #FF6B35; text-align: center;">
-          <div style="display: inline-block; background: #FF6B35; color: white; border-radius: 50%; width: 20px; height: 20px; line-height: 20px; font-size: 11px; font-weight: 700; margin-right: 6px;">1</div>
-          <span style="font-size: 11.5px; color: #2C2C2C; font-weight: 600;">Leave it alone — let the bar reach 100%</span>
-        </div>
-      </div>
-    </div>
-    <div style="text-align: center; font-size: 11px; color: #999; margin-top: 8px; font-style: italic;">Mock-up of the Hermes Desktop installer window</div>
+<div style="position: absolute; bottom: 32px; left: 50px; font-size: 12px; color: white; opacity: 0.7; letter-spacing: 1px;">
+  HM26Q3-SEC-02
+</div>
+
+</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-SET-01 · v1</div>
+
+# Step 4 of 7 — Open Nous Portal
+
+The browser lands on your <strong style="color: #2C2C2C;">Nous Portal</strong> account page. This is the billing/subscription hub for Nous Research.
+
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/setup-steps/01-nous-portal-account.png" style="display: block; width: 100%; height: auto;" />
   </div>
-
-  <!-- RIGHT: numbered instructions -->
-  <div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">What you're looking at</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">1</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        <strong style="color: #2C2C2C;">Don't close the window.</strong> The installer is downloading Python, Node.js, ripgrep, ffmpeg, cloning the repo, and writing to your system PATH.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        After auth, your browser lands on <code style="font-size: 12px;">portal.nousresearch.com</code>. Account <strong style="color: #2C2C2C;">Charles Lo</strong>, balance $0.00, free tier.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">2</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        Watch the <strong style="color: #FF6B35;">status list</strong> to see what's happening. The <span style="color: #4FA85C; font-weight: 700;">✓</span> marks are done, <span style="color: #FF8C42; font-weight: 700;">⟳</span> is in-progress, <span style="color: #AAA;">○</span> is queued.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Top tabs: <strong style="color: #2C2C2C;">Usage · API Keys · Activity · Integrations · Settings · Billing</strong>.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">3</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        If your laptop goes to sleep during install, the install may hang. Keep it awake — plug in the charger if it's a laptop.
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Click <strong style="color: #FF6B35;">Pricing</strong> in the left sidebar to see the four tiers.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 14px;">
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
       <span class="cl-num-badge">4</span>
-      <div style="font-size: 14px; color: #3A3A3A; line-height: 1.55; padding-top: 2px;">
-        When the bar hits <strong style="color: #2C2C2C;">100%</strong>: a <strong style="color: #FF6B35;">Finish screen</strong> appears (Step 5).
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        <strong style="color: #FF6B35;">Free</strong> tier covers most testing. <strong style="color: #FF6B35;">Plus</strong> at $20/mo for daily use.
       </div>
-    </div>
-    <div style="margin-top: 16px; padding: 11px 14px; background: rgba(124, 58, 237, 0.06); border-left: 3px solid #7C3AED; border-radius: 6px; font-size: 12px; color: #4A4A4A; line-height: 1.5;">
-      <strong style="color: #7C3AED;">Antivirus may flag the Git clone step</strong> — if the bar stalls on <em>"Cloning repository"</em> for 5+ min, see the <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation#troubleshooting" target="_blank" style="color: #7C3AED; font-weight: 600;">troubleshooting page</a>.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 4 of 6 · next: finish screen · if the bar stalls: <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation#troubleshooting" target="_blank" style="color: #888; text-decoration: none;">troubleshooting</a></div>
+<div class="cl-footer-meta">Step 4 of 7 · real recording frame · next: pick a tier</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-SET-02 · v1</div>
+
+# Step 5 of 7 — Pick a tier and subscribe
+
+The Pricing page shows <strong style="color: #FF6B35;">Free / Plus / Super / Ultra</strong> tiers. Click <strong style="color: #FF6B35;">Subscribe via Stripe</strong> on the tier you want.
+
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/setup-steps/02-nous-portal-pricing.png" style="display: block; width: 100%; height: auto;" />
+  </div>
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">What you get</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        <strong style="color: #2C2C2C;">Free</strong> — 300+ models, Tool Gateway, BYO key fallback.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        <strong style="color: #2C2C2C;">Plus $20/mo</strong> · <strong style="color: #2C2C2C;">Super $100/mo</strong> · <strong style="color: #2C2C2C;">Ultra $200/mo</strong> — bonus credits + rollover + higher rate limits.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Click <strong style="color: #FF6B35;">Subscribe via Stripe</strong> on the chosen card.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Stripe checkout opens (Free tier = $0.00/mo). Complete payment; API access activates immediately.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 5 of 7 · real recording frame · next: Stripe checkout</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-SET-03 · v1</div>
+
+# Step 6 of 7 — Complete Stripe checkout
+
+Stripe charges the chosen tier and links the subscription to your Nous Portal account. $0 for Free, recurring for paid tiers.
+
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/setup-steps/03-stripe-checkout.png" style="display: block; width: 100%; height: auto;" />
+  </div>
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">Stripe checkout fields</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Card title: <em>"Subscribe to Nous Subscription Monthly"</em>.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Amount: <strong style="color: #2C2C2C;">HK$0.00 per month</strong> for the Free tier — still routed through Stripe so upgrades are one-click later.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Vendor: <strong style="color: #2C2C2C;">Nous Research Inc.</strong> · account <em>charles_lo@hiphing.com.hk</em> · billing region Hong Kong SAR.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Pay with <strong style="color: #FF6B35;">Apple Pay</strong>, card, or <strong style="color: #FF6B35;">Link</strong>. Confirm — checkout closes, Portal shows active subscription.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 6 of 7 · real recording frame · next: choose a model</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-SET-04 · v1</div>
+
+# Step 7 of 7 — Choose a model in the desktop app
+
+Hermes Desktop returns focus. The model picker shows your Nous Portal models. Pick one, save, and start chatting.
+
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/install-steps/05-hermes-desktop-launched.png" style="display: block; width: 100%; height: auto;" />
+  </div>
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">Back in the chat box</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Bottom-right of the chat box shows the active model: <em>Hy3-Free · XHigh</em>.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Click it → pick a Nous Portal model (or your OpenRouter one if you added it).
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Status bar bottom-left: <strong style="color: #2C2C2C;">Gateway ready · TCL13 · Agents · Cron</strong>. All systems live.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Type a prompt at the bottom — <em>"What should we tackle?"</em> placeholder guides you.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 7 of 7 · real recording frame · next: first conversation</div>
+
+---
+layout: default
+---
+
+<div style="position: absolute; inset: 0; background: #FF6B35; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 80px; text-align: center;">
+
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 28px;">
+  S E C T I O N  ·  0 3
+</div>
+
+<h1 style="font-size: 60px; font-weight: 700; color: white; line-height: 1.1; margin: 0 0 20px; letter-spacing: -1.5px;">
+  First conversation
+</h1>
+
+<div style="font-size: 20px; font-weight: 400; color: white; opacity: 0.95; max-width: 600px; line-height: 1.4;">
+  A real demo: ask the agent to build a slide from a PDF.
+</div>
+
+<div style="position: absolute; bottom: 32px; left: 50px; font-size: 12px; color: white; opacity: 0.7; letter-spacing: 1px;">
+  HM26Q3-SEC-03
+</div>
+
+</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-CONV-01 · v1</div>
+
+# Type the prompt
+
+Type at the bottom of the chat box. Hit Enter. The agent takes it from there — installing tools, reading files, generating output.
+
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/conversation-steps/01-prompt-typed.png" style="display: block; width: 100%; height: auto;" />
+  </div>
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">What you're seeing</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Chat box at the top: <em>"Use this pdf to create 1 nos powerpoint slide to introduce the smart watch."</em>
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Sidebar left: pinned <strong style="color: #2C2C2C;">Use this pdf to create 1 nos...</strong> session. Earlier sessions visible above.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        First tool run: <em>Running code</em> <code style="font-size: 12px;">import subprocess, sys, path = r'C:\Users\TCL13\Downloads\InforSMART_Performan…</code>
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Thinking: <em>"Need to install PDF extraction and check Node/pptxgenjs. Let me set those up."</em>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 8 of 8 · real recording frame · next: agent installs tools</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-CONV-02 · v1</div>
+
+# Agent installs missing tools
+
+The agent self-installs what it needs: <code>pymupdf</code> for PDF, <code>pptxgenjs</code> + <code>react</code> for the slide. You watch, it works.
+
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/conversation-steps/02-pptxgenjs-install.png" style="display: block; width: 100%; height: auto;" />
+  </div>
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">What the agent did</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Read the PDF: <em>"PAGES: ", doc.page_count</em> — 4 pages, each with title + body text printed.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Installed <code style="font-size: 12px;">pptxgenjs</code> via npm (3.0s) — the JS PowerPoint library.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Installed <code style="font-size: 12px;">react react-dom react-icons sharp</code> (5.4s) — for a richer-looking slide with vector icons.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Thinking: <em>"Got the full content. Now I'll build one polished slide. Let me install icon tooling for a richer look, then generate."</em>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 9 of 9 · real recording frame · next: write the slide script</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-CONV-03 · v1</div>
+
+# Write the slide script
+
+The agent generates <code>extract_pdf.py</code>, a pptxgenjs script, then converts PPTX → PNG via <code>soffice --headless</code>. Two sub-steps, one tool run.
+
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/conversation-steps/03-pptx-script.png" style="display: block; width: 100%; height: auto;" />
+  </div>
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">The agent's pipeline</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Wrote <code style="font-size: 12px;">extract_pdf.py</code> — uses pymupdf to dump each page's title + body (1.4s).
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Wrote <code style="font-size: 12px;">slide.js</code> with pptxgenjs — picks an icon for each feature (GPS · Body Temp · G-sensor · Notification · SOS), builds the layout.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Rendered PPTX → PNG via LibreOffice headless (3.2s).
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Thinking: <em>"Let me assign"</em> — assigning each icon to the 5 features on the slide.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 10 of 10 · real recording frame · next: subagent QA</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-CONV-04 · v1</div>
+
+# Subagent QA
+
+The agent delegates visual inspection to a <strong style="color: #FF6B35;">subagent</strong> (badge top-left: <em>1 Subagent</em>). It checks the rendered PNG against the PDF and confirms the slide looks right.
+
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/conversation-steps/04-subagent-qa.png" style="display: block; width: 100%; height: auto;" />
+  </div>
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">Delegation pattern</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        The agent spawns a subagent to read the rendered PNG and verify icon-text alignment, font sizing, contrast.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Top-left badge: <strong style="color: #FF6B35;">1 Subagent</strong> — Hermes Agent's parallel-agent capability.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Status bar: <em>Running 3:02 · Session 3:04</em>. Bottom-right: <em>v0.18.2.98cadad</em>.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        If the subagent finds issues, it tells the main agent — the slide gets refined and re-rendered.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">Step 11 of 11 · real recording frame · next: final result</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-CONV-05 · v1</div>
+
+# Final result — the slide is ready
+
+The agent delivers the final PowerPoint slide: <strong style="color: #FF6B35;">SMART WATCH 4G — IP67 Intrinsically Safe</strong>, with feature icons (GPS · Body Temp · G-sensor · Notification · SOS) and the product spec table.
+
+<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/conversation-steps/05-final-slide.png" style="display: block; width: 100%; height: auto;" />
+  </div>
+  <div style="grid-column: span 2;">
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">What's on the slide</div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">1</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Hero: <strong style="color: #FF6B35;">SMART WATCH 4G</strong> with the <em>IP67 Intrinsically Safe</em> safety badge.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">2</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        5 feature icons: <strong style="color: #2C2C2C;">GPS · Body Temp · G-sensor · Notification · SOS</strong> — each with an icon + short label.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+      <span class="cl-num-badge">3</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Spec table on the right with the full product specs.
+      </div>
+    </div>
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
+      <span class="cl-num-badge">4</span>
+      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
+        Output saved as <code style="font-size: 12px;">InforSMART_…smart_watch_slide.pptx</code>. Download link in the chat.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cl-footer-meta">End of demo · real recording · thank you</div>
+
+---
+
+<div class="cl-ref-id">HM26Q3-END-001 · v1</div>
+
+# Q&A
+
+You watched the entire end-to-end flow on Windows: install Hermes Desktop, set up Nous Portal, and watch the agent build a real PowerPoint slide from a PDF — in under 30 minutes of recording.
+
+<div style="margin-top: 30px; padding: 24px 28px; background: #FFE9DA; border-left: 4px solid #FF6B35; border-radius: 8px;">
+  <h3 style="margin: 0 0 8px; font-size: 17px; color: #FF6B35;">Where to go next</h3>
+  <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; color: #2C2C2C;">
+    <li><a href="https://hermes-agent.nousresearch.com/docs" target="_blank" style="color: #FF6B35; font-weight: 600;">Full docs</a> · every command, every provider, every MCP server</li>
+    <li><a href="https://hermes-agent.nousresearch.com/docs/integrations/providers" target="_blank" style="color: #FF6B35; font-weight: 600;">AI Providers</a> · 30+ providers including OpenRouter, Anthropic, Google, GitHub Copilot</li>
+    <li><a href="https://hermes-agent.nousresearch.com/docs/user-guide/features/skills" target="_blank" style="color: #FF6B35; font-weight: 600;">Skills System</a> · reusable workflows like the PowerPoint one we just used</li>
+    <li><a href="https://hermes-agent.nousresearch.com/docs/user-guide/messaging/" target="_blank" style="color: #FF6B35; font-weight: 600;">Messaging Gateway</a> · Telegram, Discord, Slack, WhatsApp, Signal, Email, Teams</li>
+    <li><a href="https://hermes-agent.nousresearch.com/docs/getting-started/quickstart" target="_blank" style="color: #FF6B35; font-weight: 600;">Quickstart</a> · the full text version of what we covered</li>
+  </ul>
+</div>
+
+<div class="cl-footer-meta">19 slides · recorded live on Windows · Charles Lo · 2026-07</div>
