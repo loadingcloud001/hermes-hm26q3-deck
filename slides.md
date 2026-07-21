@@ -265,109 +265,42 @@ Double-click <code>Hermes-Setup.exe</code> from your browser downloads. A 16-ste
 
 # Step 3 of 4 — Hermes Desktop launches
 
-The installer finishes, the desktop app opens full-screen. A OpenRouter sign-in prompt appears with a 6-character code.
+The installer finishes, the desktop app opens full-screen. If a "Sign in with Nous Portal" dialog appears, **close it** — we will use OpenRouter directly in the next section.
 
 <div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/install-steps/05-hermes-desktop-launched.png" style="display: block; width: 100%; height: auto;" />
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/install-steps/05-hermes-desktop-launched.png" style="display: block; width: 100%; height: auto; border-radius: 10px;" />
   </div>
   <div style="grid-column: span 2;">
     <div class="cl-eyebrow" style="margin-bottom: 10px;">Skip the welcome dialog</div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">1</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Hermes Desktop opens full-screen. A sign-in window shows a <strong style="color: #FF6B35;">6-character code</strong> (e.g. <code>EK73-UAH</code>) — this is device-flow OAuth.
+        Hermes Desktop opens full-screen. If a sign-in dialog appears, click <strong style="color: #FF6B35;">Close</strong> — we will set up the model in the next section.
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">2</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        A browser window opens automatically to <code style="font-size: 12px;">openrouter.ai/login</code>.
+        The left sidebar shows <em>New chat · MCP · Files · API Token · Auto-Login</em>. The model picker at bottom-right reads <em>OpenRouter</em>.
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">3</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Type the 6-char code into the browser. Click <strong style="color: #FF6B35;">Authorize</strong>.
+        Status bar at the bottom shows <strong style="color: #2C2C2C;">Gateway ready · Agents · Cron</strong> when the desktop app has finished loading.
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px;">
       <span class="cl-num-badge">4</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        The desktop app detects the auth and continues to model selection.
+        Hermes Desktop is now ready. Next: add your OpenRouter API key.
       </div>
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 3 of 4 · real recording frame · next: pick a tier</div>
-
----
-layout: default
----
-
-<div style="position: absolute; inset: 0; background: #FF6B35; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 80px; text-align: center;">
-
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 28px;">
-  S E C T I O N  ·  0 2
-</div>
-
-<h1 style="font-size: 60px; font-weight: 700; color: white; line-height: 1.1; margin: 0 0 20px; letter-spacing: -1.5px;">
-  Set up OpenRouter
-</h1>
-
-<div style="font-size: 20px; font-weight: 400; color: white; opacity: 0.95; max-width: 600px; line-height: 1.4;">
-  Sign up free. Create a key. Pick a model. Then chat.
-</div>
-
-<div style="position: absolute; bottom: 32px; left: 50px; font-size: 12px; color: white; opacity: 0.7; letter-spacing: 1px;">
-  HM26Q3-SEC-02
-</div>
-
-</div>
-
----
-<div class="cl-ref-id">HM26Q3-SET-01 · v1</div>
-
-# Step 1 of 3 — Open OpenRouter
-
-OpenRouter aggregates 200+ AI models behind a single API key — no separate sign-ups per provider, no juggling vendor consoles.
-
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/setup-steps/04-openrouter-rankings.png" style="display: block; width: 100%; height: auto; border-radius: 10px;" />
-  </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">What you're looking at</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Go to <a href="https://openrouter.ai" target="_blank" style="color: #FF6B35; font-weight: 600;">openrouter.ai</a> in Edge.
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Click <strong style="color: #FF6B35;">Sign in</strong> in the top-right → <strong style="color: #FF6B35;">Create account</strong>. Email or Google sign-in both work.
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Browse the <strong style="color: #2C2C2C;">Rankings</strong> page (this screenshot). It shows the top models by usage — <em>Claude, Gemini, GPT-4o, Llama, DeepSeek, Mistral</em>.
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Free models exist — look for the <code style="font-size: 12px;">:free</code> suffix in the model id (e.g. <code style="font-size: 12px;">meta-llama/llama-3.3-70b-instruct:free</code>).
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="cl-footer-meta">Step 1 of 3 · real recording frame · next: create an API key</div>
-
+<div class="cl-footer-meta">Step 3 of 4 · real recording frame · next: set up OpenRouter</div>
 ---
 
 <div class="cl-ref-id">HM26Q3-SET-02 · v1</div>
