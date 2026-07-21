@@ -164,13 +164,20 @@ layout: default
 
 <div class="cl-ref-id">HM26Q3-INS-01 · v1</div>
 
-# Step 1 of 4 — Visit the homepage
+# Step 1 of 4 — Visit the official blue homepage
 
-Go to <code>hermes-agent.nousresearch.com</code> in Edge or Chrome. The site shows three download paths.
+Open Edge or Chrome and go to the <strong style="color:#FF6B35;">official blue homepage</strong>: <a href="https://hermes-agent.nousresearch.com" target="_blank" style="font-weight:700;color:#FF6B35;">hermes-agent.nousresearch.com</a>. On this blue page you will see three platform cards. Click the <strong style="color:#FF6B35;">Windows</strong> card's <strong style="color:#FF6B35;">DOWNLOAD</strong> button.
 
 <div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08); position: relative;">
     <img src="/install-steps/01-download-page.png" style="display: block; width: 100%; height: auto;" />
+    <!-- Annotation arrow pointing at the Windows download button -->
+    <div style="position: absolute; top: 40%; left: 52%; transform: translate(-50%, -50%); pointer-events: none; z-index: 10;">
+      <div style="background: #FF6B35; color: white; padding: 6px 14px; border-radius: 9999px; font-size: 13px; font-weight: 700; box-shadow: 0 3px 12px rgba(255,107,53,0.45); white-space: nowrap;">
+        ⬇ Click this Download button
+      </div>
+      <div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 10px solid #FF6B35; margin: 2px auto 0;"></div>
+    </div>
   </div>
   <div style="grid-column: span 2;">
     <div class="cl-eyebrow" style="margin-bottom: 10px;">Pick your platform</div>
