@@ -219,8 +219,14 @@ Open Edge or Chrome and go to the <strong style="color:#FF6B35;">official blue h
 Double-click <code>Hermes-Setup.exe</code> from your browser downloads. A 16-step installer dialog opens — let it run unattended.
 
 <div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 400px;">
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 400px; position: relative;">
     <img src="/install-steps/03-installer-running.png" style="display: block; max-width: 100%; max-height: 480px; height: auto;" />
+    <div style="position: absolute; top: 18%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; z-index: 10;">
+      <div style="background: #FF6B35; color: white; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 700; box-shadow: 0 2px 10px rgba(255,107,53,0.5); white-space: nowrap;">
+        ⏳ Let it reach 100%
+      </div>
+      <div style="width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 9px solid #FF6B35; margin: 2px auto 0;"></div>
+    </div>
   </div>
   <div style="grid-column: span 2;">
     <div class="cl-eyebrow" style="margin-bottom: 10px;">What the installer does</div>
