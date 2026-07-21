@@ -54,7 +54,7 @@ layout: default
     <div class="cl-letter-badge">b</div>
     <h3 style="margin: 14px 0 8px; font-size: 18px; font-weight: 700; color: #2C2C2C; line-height: 1.3;">Choose a provider</h3>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      Three setup modes. Nous Portal is fastest — one login covers 300+ models.
+      Three setup modes. OpenRouter is fastest — one key covers 200+ models.
     </div>
   </div>
   <div class="cl-card">
@@ -115,7 +115,7 @@ One installer, three things running on your Windows machine.
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; background: var(--card-peach); border-left: 3px solid var(--accent-orange); border-radius: 8px; margin-bottom: 10px;">
       <span class="cl-num-badge">2</span>
-      <div style="font-size: 13px; color: #3A3A3A; line-height: 1.5;"><strong style="color: #2C2C2C;">Pick your model.</strong> Nous Portal, Claude, GPT, Gemini, DeepSeek, GitHub Copilot — switch from the model picker, no restart.</div>
+      <div style="font-size: 13px; color: #3A3A3A; line-height: 1.5;"><strong style="color: #2C2C2C;">Pick your model.</strong> OpenRouter routes to Claude, GPT, Gemini, Llama, DeepSeek, Mistral — switch from the model picker, no restart.</div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; background: var(--card-peach); border-left: 3px solid var(--accent-orange); border-radius: 8px; margin-bottom: 10px;">
       <span class="cl-num-badge">3</span>
@@ -265,14 +265,14 @@ Double-click <code>Hermes-Setup.exe</code> from your browser downloads. A 16-ste
 
 # Step 3 of 4 — Hermes Desktop launches
 
-The installer finishes, the desktop app opens full-screen. A Nous Portal sign-in prompt appears with a 6-character code.
+The installer finishes, the desktop app opens full-screen. A OpenRouter sign-in prompt appears with a 6-character code.
 
 <div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
   <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
     <img src="/install-steps/05-hermes-desktop-launched.png" style="display: block; width: 100%; height: auto;" />
   </div>
   <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">Sign in to Nous Portal</div>
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">Skip the welcome dialog</div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">1</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
@@ -282,7 +282,7 @@ The installer finishes, the desktop app opens full-screen. A Nous Portal sign-in
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">2</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        A browser window opens automatically to <code style="font-size: 12px;">portal.nousresearch.com/login</code>.
+        A browser window opens automatically to <code style="font-size: 12px;">openrouter.ai/login</code>.
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
@@ -313,11 +313,11 @@ layout: default
 </div>
 
 <h1 style="font-size: 60px; font-weight: 700; color: white; line-height: 1.1; margin: 0 0 20px; letter-spacing: -1.5px;">
-  Set up Nous Portal
+  Set up OpenRouter
 </h1>
 
 <div style="font-size: 20px; font-weight: 400; color: white; opacity: 0.95; max-width: 600px; line-height: 1.4;">
-  Pick a tier. Subscribe. Get 300+ models + the Tool Gateway.
+  Sign up free. Create a key. Pick a model. Then chat.
 </div>
 
 <div style="position: absolute; bottom: 32px; left: 50px; font-size: 12px; color: white; opacity: 0.7; letter-spacing: 1px;">
@@ -327,200 +327,132 @@ layout: default
 </div>
 
 ---
-
 <div class="cl-ref-id">HM26Q3-SET-01 · v1</div>
 
-# Step 4 of 7 — Open Nous Portal
+# Step 1 of 3 — Open OpenRouter
 
-The browser lands on your <strong style="color: #2C2C2C;">Nous Portal</strong> account page. This is the billing/subscription hub for Nous Research.
+OpenRouter aggregates 200+ AI models behind a single API key — no separate sign-ups per provider, no juggling vendor consoles.
 
 <div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/setup-steps/01-nous-portal-account.png" style="display: block; width: 100%; height: auto;" />
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/setup-steps/04-openrouter-rankings.png" style="display: block; width: 100%; height: auto; border-radius: 10px;" />
   </div>
   <div style="grid-column: span 2;">
     <div class="cl-eyebrow" style="margin-bottom: 10px;">What you're looking at</div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">1</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        After auth, your browser lands on <code style="font-size: 12px;">portal.nousresearch.com</code>. Account <strong style="color: #2C2C2C;">Charles Lo</strong>, balance $0.00, free tier.
+        Go to <a href="https://openrouter.ai" target="_blank" style="color: #FF6B35; font-weight: 600;">openrouter.ai</a> in Edge.
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">2</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Top tabs: <strong style="color: #2C2C2C;">Usage · API Keys · Activity · Integrations · Settings · Billing</strong>.
+        Click <strong style="color: #FF6B35;">Sign in</strong> in the top-right → <strong style="color: #FF6B35;">Create account</strong>. Email or Google sign-in both work.
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">3</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Click <strong style="color: #FF6B35;">Pricing</strong> in the left sidebar to see the four tiers.
+        Browse the <strong style="color: #2C2C2C;">Rankings</strong> page (this screenshot). It shows the top models by usage — <em>Claude, Gemini, GPT-4o, Llama, DeepSeek, Mistral</em>.
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px;">
       <span class="cl-num-badge">4</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        <strong style="color: #FF6B35;">Free</strong> tier covers most testing. <strong style="color: #FF6B35;">Plus</strong> at $20/mo for daily use.
+        Free models exist — look for the <code style="font-size: 12px;">:free</code> suffix in the model id (e.g. <code style="font-size: 12px;">meta-llama/llama-3.3-70b-instruct:free</code>).
       </div>
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 4 of 7 · real recording frame · next: pick a tier</div>
+<div class="cl-footer-meta">Step 1 of 3 · real recording frame · next: create an API key</div>
 
 ---
 
 <div class="cl-ref-id">HM26Q3-SET-02 · v1</div>
 
-# Step 5 of 7 — Pick a tier and subscribe
+# Step 2 of 3 — Create an API key
 
-The Pricing page shows <strong style="color: #FF6B35;">Free / Plus / Super / Ultra</strong> tiers. Click <strong style="color: #FF6B35;">Subscribe via Stripe</strong> on the tier you want.
+OpenRouter gives you one key that works across every model. No per-vendor credentials.
 
 <div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/setup-steps/02-nous-portal-pricing.png" style="display: block; width: 100%; height: auto;" />
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/setup-steps/05-openrouter-keys-page.png" style="display: block; width: 100%; height: auto; border-radius: 10px;" />
   </div>
   <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">What you get</div>
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">From your dashboard</div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">1</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        <strong style="color: #2C2C2C;">Free</strong> — 300+ models, Tool Gateway, BYO key fallback.
+        Click your avatar → <strong style="color: #FF6B35;">Keys</strong> (or go to <a href="https://openrouter.ai/settings/keys" target="_blank" style="color: #FF6B35; font-weight: 600;">openrouter.ai/settings/keys</a>).
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">2</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        <strong style="color: #2C2C2C;">Plus $20/mo</strong> · <strong style="color: #2C2C2C;">Super $100/mo</strong> · <strong style="color: #2C2C2C;">Ultra $200/mo</strong> — bonus credits + rollover + higher rate limits.
+        Click <strong style="color: #FF6B35;">+ New Key</strong>. Give it a name (e.g. <em>Hermes Desktop</em>).
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">3</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Click <strong style="color: #FF6B35;">Subscribe via Stripe</strong> on the chosen card.
+        Copy the key — it starts with <code style="font-size: 12px;">sk-or-v1-…</code>. You will <strong style="color: #2C2C2C;">only see it once</strong>.
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px;">
       <span class="cl-num-badge">4</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Stripe checkout opens (Free tier = $0.00/mo). Complete payment; API access activates immediately.
+        Set a spending limit if you like — <em>Keys → click the key → Limit</em>. Default is $0 (free models only).
       </div>
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 5 of 7 · real recording frame · next: Stripe checkout</div>
+<div class="cl-footer-meta">Step 2 of 3 · real recording frame · next: add it to Hermes</div>
 
 ---
 
 <div class="cl-ref-id">HM26Q3-SET-03 · v1</div>
 
-# Step 6 of 7 — Complete Stripe checkout
+# Step 3 of 3 — Add the key to Hermes Desktop
 
-Stripe charges the chosen tier and links the subscription to your Nous Portal account. $0 for Free, recurring for paid tiers.
+Back in the desktop app, open Settings, paste the key, pick a model. Done.
 
 <div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/setup-steps/03-stripe-checkout.png" style="display: block; width: 100%; height: auto;" />
+  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="/setup-steps/07-config-set-page.png" style="display: block; width: 100%; height: auto; border-radius: 10px;" />
   </div>
   <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">Stripe checkout fields</div>
+    <div class="cl-eyebrow" style="margin-bottom: 10px;">Wiring up OpenRouter</div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">1</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Card title: <em>"Subscribe to Nous Subscription Monthly"</em>.
+        In Hermes Desktop, open <strong style="color: #FF6B35;">Settings → API Keys</strong> (left sidebar).
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">2</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Amount: <strong style="color: #2C2C2C;">HK$0.00 per month</strong> for the Free tier — still routed through Stripe so upgrades are one-click later.
+        Paste your <code style="font-size: 12px;">sk-or-v1-…</code> key into the <strong style="color: #2C2C2C;">OpenRouter</strong> field. Click <strong style="color: #FF6B35;">Save</strong>.
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
       <span class="cl-num-badge">3</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Vendor: <strong style="color: #2C2C2C;">Nous Research Inc.</strong> · account <em>charles_lo@hiphing.com.hk</em> · billing region Hong Kong SAR.
+        In the <strong style="color: #2C2C2C;">Model</strong> dropdown, pick: <code style="font-size: 12px;">openrouter/meta-llama/llama-3.3-70b-instruct:free</code> (or any <code style="font-size: 12px;">:free</code> model).
       </div>
     </div>
     <div style="display: flex; align-items: flex-start; gap: 12px;">
       <span class="cl-num-badge">4</span>
       <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Pay with <strong style="color: #FF6B35;">Apple Pay</strong>, card, or <strong style="color: #FF6B35;">Link</strong>. Confirm — checkout closes, Portal shows active subscription.
+        Status bar shows <strong style="color: #2C2C2C;">Gateway ready</strong> when the key validates. Now type a prompt in the chat box.
       </div>
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 6 of 7 · real recording frame · next: choose a model</div>
-
----
-
-<div class="cl-ref-id">HM26Q3-SET-04 · v1</div>
-
-# Step 7 of 7 — Choose a model in the desktop app
-
-Hermes Desktop returns focus. The model picker shows your Nous Portal models. Pick one, save, and start chatting.
-
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/install-steps/05-hermes-desktop-launched.png" style="display: block; width: 100%; height: auto;" />
-  </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">Back in the chat box</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Bottom-right of the chat box shows the active model: <em>Hy3-Free · XHigh</em>.
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Click it → pick a Nous Portal model (or your OpenRouter one if you added it).
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Status bar bottom-left: <strong style="color: #2C2C2C;">Gateway ready · TCL13 · Agents · Cron</strong>. All systems live.
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Type a prompt at the bottom — <em>"What should we tackle?"</em> placeholder guides you.
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="cl-footer-meta">Step 7 of 7 · real recording frame · next: first conversation</div>
-
----
-layout: default
----
-
-<div style="position: absolute; inset: 0; background: #FF6B35; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 80px; text-align: center;">
-
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 28px;">
-  S E C T I O N  ·  0 3
-</div>
-
-<h1 style="font-size: 60px; font-weight: 700; color: white; line-height: 1.1; margin: 0 0 20px; letter-spacing: -1.5px;">
-  First conversation
-</h1>
-
-<div style="font-size: 20px; font-weight: 400; color: white; opacity: 0.95; max-width: 600px; line-height: 1.4;">
-  A real demo: ask the agent to build a slide from a PDF.
-</div>
-
-<div style="position: absolute; bottom: 32px; left: 50px; font-size: 12px; color: white; opacity: 0.7; letter-spacing: 1px;">
-  HM26Q3-SEC-03
-</div>
-
-</div>
+<div class="cl-footer-meta">Step 3 of 3 · real recording frame · next: first conversation</div>
 
 ---
 
@@ -743,13 +675,13 @@ The agent delivers the final PowerPoint slide: <strong style="color: #FF6B35;">S
 
 # Q&A
 
-You watched the entire end-to-end flow on Windows: install Hermes Desktop, set up Nous Portal, and watch the agent build a real PowerPoint slide from a PDF — in under 30 minutes of recording.
+You watched the entire end-to-end flow on Windows: install Hermes Desktop, set up OpenRouter, and watch the agent build a real PowerPoint slide from a PDF — in under 30 minutes of recording.
 
 <div style="margin-top: 30px; padding: 24px 28px; background: #FFE9DA; border-left: 4px solid #FF6B35; border-radius: 8px;">
   <h3 style="margin: 0 0 8px; font-size: 17px; color: #FF6B35;">Where to go next</h3>
   <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; color: #2C2C2C;">
     <li><a href="https://hermes-agent.nousresearch.com/docs" target="_blank" style="color: #FF6B35; font-weight: 600;">Full docs</a> · every command, every provider, every MCP server</li>
-    <li><a href="https://hermes-agent.nousresearch.com/docs/integrations/providers" target="_blank" style="color: #FF6B35; font-weight: 600;">AI Providers</a> · 30+ providers including OpenRouter, Anthropic, Google, GitHub Copilot</li>
+    <li><a href="https://openrouter.ai/models" target="_blank" style="color: #FF6B35; font-weight: 600;">AI Providers</a> · 30+ providers including OpenRouter, Anthropic, Google, GitHub Copilot</li>
     <li><a href="https://hermes-agent.nousresearch.com/docs/user-guide/features/skills" target="_blank" style="color: #FF6B35; font-weight: 600;">Skills System</a> · reusable workflows like the PowerPoint one we just used</li>
     <li><a href="https://hermes-agent.nousresearch.com/docs/user-guide/messaging/" target="_blank" style="color: #FF6B35; font-weight: 600;">Messaging Gateway</a> · Telegram, Discord, Slack, WhatsApp, Signal, Email, Teams</li>
     <li><a href="https://hermes-agent.nousresearch.com/docs/getting-started/quickstart" target="_blank" style="color: #FF6B35; font-weight: 600;">Quickstart</a> · the full text version of what we covered</li>
