@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "hermes-hm26q3",
+  "name": "hermes-hm26q3-deck",
   "compatibility_date": "2026-07-14",
   "observability": { "enabled": true },
   "assets": { "directory": "dist" },
