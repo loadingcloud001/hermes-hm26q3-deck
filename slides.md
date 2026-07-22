@@ -630,60 +630,60 @@ layout: default
 # Type your first prompt
 
 <div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
-  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+  <div style="display: flex; flex-direction: column; gap: 8px; overflow: hidden; min-height: 0;">
     <div class="cl-eyebrow">Try one of these</div>
-    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">Three prompts that show off what Hermes can do</h2>
-    <div style="font-size: 12px; color: #5A5A5A; line-height: 1.5;">
-      The agent will think for a few seconds, possibly call a tool, and stream a reply back. The first one is a warm-up; the second and third show real tool use.
+    <h2 style="margin: 0; font-size: 20px; line-height: 1.25;">Three prompts that show off what Hermes can do</h2>
+    <div style="font-size: 11.5px; color: #5A5A5A; line-height: 1.4;">
+      The agent will think, possibly call a tool, and stream a reply. First = warm-up; second and third show real tool use.
     </div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px;">
       <div style="display: flex; align-items: center; gap: 8px;">
-        <span style="font-size: 10px; font-weight: 700; color: white; background: #4FA85C; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">EASY</span>
-        <strong style="font-size: 13.5px; color: #2C2C2C;">Warm-up chat</strong>
+        <span style="font-size: 9.5px; font-weight: 700; color: white; background: #4FA85C; padding: 2px 7px; border-radius: 4px; letter-spacing: 1px;">EASY</span>
+        <strong style="font-size: 13px; color: #2C2C2C;">Warm-up chat</strong>
       </div>
-      <div style="font-style: italic; font-size: 13px; color: #3A3A3A; line-height: 1.5;">
+      <div style="font-style: italic; font-size: 12px; color: #3A3A3A; line-height: 1.45;">
         "Explain in 3 sentences what you can do that a normal chatbot can't."
       </div>
     </div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px;">
       <div style="display: flex; align-items: center; gap: 8px;">
-        <span style="font-size: 10px; font-weight: 700; color: white; background: #3974C5; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">TOOL USE</span>
-        <strong style="font-size: 13.5px; color: #2C2C2C;">Read a file</strong>
+        <span style="font-size: 9.5px; font-weight: 700; color: white; background: #3974C5; padding: 2px 7px; border-radius: 4px; letter-spacing: 1px;">TOOL USE</span>
+        <strong style="font-size: 13px; color: #2C2C2C;">Read a file</strong>
       </div>
-      <div style="font-style: italic; font-size: 13px; color: #3A3A3A; line-height: 1.5;">
+      <div style="font-style: italic; font-size: 12px; color: #3A3A3A; line-height: 1.45;">
         "Read <code>~/.hermes/config.yaml</code> and tell me what model is set as default."
       </div>
     </div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px;">
       <div style="display: flex; align-items: center; gap: 8px;">
-        <span style="font-size: 10px; font-weight: 700; color: white; background: #7C3AED; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">MULTI-STEP</span>
-        <strong style="font-size: 13.5px; color: #2C2C2C;">Run a real task</strong>
+        <span style="font-size: 9.5px; font-weight: 700; color: white; background: #7C3AED; padding: 2px 7px; border-radius: 4px; letter-spacing: 1px;">MULTI-STEP</span>
+        <strong style="font-size: 13px; color: #2C2C2C;">Run a real task</strong>
       </div>
-      <div style="font-style: italic; font-size: 13px; color: #3A3A3A; line-height: 1.5;">
-        "Create a folder called <code>notes/</code> on my Desktop and inside it write a file <code>today.md</code> with the current date and a 3-bullet to-do list I can edit."
+      <div style="font-style: italic; font-size: 12px; color: #3A3A3A; line-height: 1.45;">
+        "Make a <code>notes/</code> folder on my Desktop and inside it write <code>today.md</code> with the date and a 3-bullet to-do list I can edit."
       </div>
     </div>
   </div>
-  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+  <div style="display: flex; flex-direction: column; gap: 8px; overflow: hidden; min-height: 0;">
     <div class="cl-eyebrow">What good looks like</div>
-    <h2 style="margin: 0; font-size: 20px; line-height: 1.25;">It's not just chat</h2>
-    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.5;">
-      A real reply streams in over a few seconds. You'll see lines like <code>Skill View 72ms</code> or <code>Running code import subprocess, sys</code> scroll past as Hermes works. Then a final answer.
+    <h2 style="margin: 0; font-size: 19px; line-height: 1.25;">It's not just chat</h2>
+    <div style="font-size: 12px; color: #3A3A3A; line-height: 1.45;">
+      A real reply streams in over a few seconds. You'll see lines like <code>Skill View 72ms</code> scroll past as Hermes works. Then a final answer.
     </div>
-    <div class="cl-desc-box">
-      <strong>You stay in control:</strong> by default Hermes asks before running any shell command that looks destructive (deletes files, force-pushes, etc.). You see the command, you approve or deny.
+    <div class="cl-desc-box" style="padding: 10px 14px;">
+      <strong>You stay in control:</strong> Hermes asks before any shell command that looks destructive. You see the command, you approve or deny.
     </div>
     <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 10px 12px;">
-      <div style="font-size: 10.5px; color: #888; letter-spacing: 1px; font-weight: 700; margin-bottom: 6px;">SAMPLE REPLY</div>
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #5A6470; line-height: 1.5;">
+      <div style="font-size: 10px; color: #888; letter-spacing: 1px; font-weight: 700; margin-bottom: 5px;">SAMPLE REPLY</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #5A6470; line-height: 1.5;">
         <span style="color: #4FA85C;">●</span> Thinking — read config...<br>
         <span style="color: #4FA85C;">●</span> Skill View 80ms<br>
         <span style="color: #FF6B35;">→</span> Default model: <code>tencent/hy3:free</code><br>
         <span style="color: #4FA85C;">●</span> Done.
       </div>
     </div>
-    <div style="font-size: 11.5px; color: #888; line-height: 1.5;">
-      Want to skip approvals? Add <code>--yolo</code> to the launch command. Not recommended for a first run.
+    <div style="font-size: 10.5px; color: #888; line-height: 1.5;">
+      Skip approvals with <code>--yolo</code> (not recommended for first run).
     </div>
   </div>
 </div>
