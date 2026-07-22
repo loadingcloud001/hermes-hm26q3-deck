@@ -703,39 +703,37 @@ layout: default
     </div>
     <img src="/images/10-final-ppt.png" style="width: 100%; height: 100%; object-fit: contain; background: #fff; border-radius: 8px;">
   </div>
-  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+  <div style="display: flex; flex-direction: column; gap: 8px; overflow: hidden; min-height: 0;">
     <div class="cl-eyebrow">This deck is built by Hermes</div>
-    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">From one prompt to a finished PowerPoint slide</h2>
-    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.5;">
-      The screenshot on the left is the result of a single chat with Hermes. The user typed:
+    <h2 style="margin: 0; font-size: 19px; line-height: 1.25;">From one prompt to a finished slide</h2>
+    <div style="font-size: 12px; color: #3A3A3A; line-height: 1.45;">
+      The screenshot is the result of a single chat. The user typed:
     </div>
-    <div style="background: #1E1E1E; color: #E6E6E6; border-radius: 10px; padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.7;">
-      <div style="color: #888; font-size: 10.5px; margin-bottom: 4px;">YOU TYPE</div>
+    <div style="background: #1E1E1E; color: #E6E6E6; border-radius: 10px; padding: 12px 14px; font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.7;">
+      <div style="color: #888; font-size: 10px; margin-bottom: 4px;">YOU TYPE</div>
       <div style="color: #FF8C42;">"Use this PDF to create 1 PowerPoint slide that introduces the Smart Watch 4G."</div>
     </div>
-    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.5;">
-      Hermes then:
-    </div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px;">
-      <div style="display: flex; align-items: baseline; gap: 10px;">
-        <span style="font-size: 11px; font-weight: 700; color: #4FA85C; letter-spacing: 1px;">①</span>
-        <span style="font-size: 12px; color: #2C2C2C;">Read the PDF with <code>pymupdf</code> (installed automatically)</span>
+    <div style="font-size: 11.5px; color: #3A3A3A; line-height: 1.45;">Hermes then:</div>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 5px;">
+      <div style="display: flex; align-items: baseline; gap: 8px;">
+        <span style="font-size: 10.5px; font-weight: 700; color: #4FA85C;">①</span>
+        <span style="font-size: 11.5px; color: #2C2C2C;">Read PDF with <code>pymupdf</code> (installed)</span>
       </div>
-      <div style="display: flex; align-items: baseline; gap: 10px;">
-        <span style="font-size: 11px; font-weight: 700; color: #4FA85C; letter-spacing: 1px;">②</span>
-        <span style="font-size: 12px; color: #2C2C2C;">Wrote a <code>extract_pdf.py</code> script and ran it</span>
+      <div style="display: flex; align-items: baseline; gap: 8px;">
+        <span style="font-size: 10.5px; font-weight: 700; color: #4FA85C;">②</span>
+        <span style="font-size: 11.5px; color: #2C2C2C;">Wrote <code>extract_pdf.py</code> and ran it</span>
       </div>
-      <div style="display: flex; align-items: baseline; gap: 10px;">
-        <span style="font-size: 11px; font-weight: 700; color: #4FA85C; letter-spacing: 1px;">③</span>
-        <span style="font-size: 12px; color: #2C2C2C;">Used a subagent to QA the spec sheet</span>
+      <div style="display: flex; align-items: baseline; gap: 8px;">
+        <span style="font-size: 10.5px; font-weight: 700; color: #4FA85C;">③</span>
+        <span style="font-size: 11.5px; color: #2C2C2C;">Subagent QA'd the spec</span>
       </div>
-      <div style="display: flex; align-items: baseline; gap: 10px;">
-        <span style="font-size: 11px; font-weight: 700; color: #4FA85C; letter-spacing: 1px;">④</span>
-        <span style="font-size: 12px; color: #2C2C2C;">Generated the final <code>SmartWatch_Intro.pptx</code></span>
+      <div style="display: flex; align-items: baseline; gap: 8px;">
+        <span style="font-size: 10.5px; font-weight: 700; color: #4FA85C;">④</span>
+        <span style="font-size: 11.5px; color: #2C2C2C;">Generated <code>SmartWatch_Intro.pptx</code></span>
       </div>
     </div>
-    <div class="cl-desc-box">
-      <strong>Why this matters:</strong> zero PowerPoint skills needed. You asked in English, Hermes wrote Python, ran it, and gave you a file. The same pattern works for Excel, PDFs, web scraping, file conversion — anything you can describe.
+    <div style="font-size: 10.5px; color: #888; line-height: 1.5;">
+      <strong style="color: #2C2C2C;">Same pattern:</strong> Excel, PDFs, scraping, file conversion — anything you can describe.
     </div>
   </div>
 </div>
