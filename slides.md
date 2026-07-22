@@ -90,7 +90,7 @@ layout: default
 </div>
 
 <div style="position: absolute; bottom: 28px; left: 50px; font-size: 11px; color: #999;">
-  HM26Q3 · 19 slides · ~30 minutes · Windows desktop
+  HM26Q3 · 21 slides · ~30 minutes · Windows desktop
 </div>
 
 ---
@@ -182,6 +182,10 @@ layout: default
     </div>
     <div class="cl-desc-box">
       <strong>What you see on the right of this screenshot:</strong> the installer is already running, working through its checklist. You'll get here about 10 seconds after the .exe finishes downloading.
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #FFFFFF; border: 1px solid #FF6B35; border-radius: 10px; margin-top: 4px;">
+      <span style="font-size: 12px; color: #3A3A3A;">Can't see the button? Open it in your browser:</span>
+      <a href="https://hermes-agent.nousresearch.com/" target="_blank" rel="noopener" style="display: inline-block; padding: 7px 14px; background: #FF6B35; color: white; border-radius: 6px; font-size: 11.5px; font-weight: 600; text-decoration: none; letter-spacing: 0.3px;">Open download page ↗</a>
     </div>
     <div style="font-size: 11.5px; color: #888; line-height: 1.5; margin-top: 4px;">
       File size: ~50–80 MB · takes 10–60 seconds on a normal connection.
@@ -396,46 +400,82 @@ layout: default
 
 <div class="cl-ref-id">HM26Q3-S2-005 · v3</div>
 
-# Step 3 — Point Hermes at OpenRouter
+# Step 3 — Connect OpenRouter in the desktop app
 
 <div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
+    <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
+      <span class="cl-image-pill">⑫ PICK OPENROUTER</span>
+    </div>
+    <img src="/images/12-desktop-provider-picker.jpg" style="width: 100%; height: 100%; object-fit: contain; background: #0a0a0a; border-radius: 8px;">
+  </div>
   <div style="display: flex; flex-direction: column; gap: 10px; overflow: hidden; min-height: 0;">
-    <div class="cl-eyebrow">Open PowerShell or Windows Terminal</div>
-    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">One command, three settings</h2>
-    <div style="font-size: 13px; color: #3A3A3A; line-height: 1.55;">
-      The installer added <code>hermes</code> to your PATH. Run these three commands in order. The first writes the base URL, the second writes your API key, the third picks the model.
+    <div class="cl-eyebrow">On first launch</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">Pick OpenRouter, paste your key</h2>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.5;">
+      The desktop app opens a setup wizard on first run. It lists 10 providers — pick <strong>OpenRouter</strong> ("one key, many models"). Paste the <code>sk-or-v1-...</code> key you generated earlier. Click <strong>Connecting</strong>.
     </div>
-    <div style="background: #1E1E1E; color: #E6E6E6; border-radius: 10px; padding: 16px 18px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; line-height: 1.85;">
-      <div><span style="color: #5EC4A8;">PS&gt;</span> hermes config set model.base_url https://openrouter.ai/api/v1</div>
-      <div><span style="color: #5EC4A8;">PS&gt;</span> hermes config set model.api_key <span style="color: #D9A93B;">sk-or-v1-...</span></div>
-      <div><span style="color: #5EC4A8;">PS&gt;</span> hermes config set model.default <span style="color: #FF8C42;">tencent/hunyuan-a13b-instruct:free</span></div>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px;">
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #FF6B35; letter-spacing: 1px;">STEP 1</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Click <strong>OpenRouter</strong> card</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #FF6B35; letter-spacing: 1px;">STEP 2</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Paste your <code>sk-or-v1-...</code> key</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #FF6B35; letter-spacing: 1px;">STEP 3</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Click <strong>Connecting</strong> (takes ~3 sec)</span>
+      </div>
     </div>
-    <div style="font-size: 11.5px; color: #888; line-height: 1.5; margin-top: 4px;">
-      Paste your actual key in place of <code>sk-or-v1-...</code>. The third line picks the default model — swap to Llama 3.3 70B or Qwen 2.5 72B any time.
+    <div class="cl-desc-box">
+      <strong>No terminal needed.</strong> The wizard writes your key to <code>~/.hermes/config.yaml</code> automatically.
     </div>
   </div>
-  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
-    <div class="cl-eyebrow">What each line does</div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #FF6B35; font-weight: 700;">model.base_url</div>
-      <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5;">
-        Tells Hermes where to send requests. OpenRouter's URL is fixed; never paste your provider's URL here.
+</div>
+
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-S2-006 · v3</div>
+
+# Step 4 — Switch to a free model
+
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
+    <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
+      <span class="cl-image-pill">⑬ SWITCH TO FREE</span>
+    </div>
+    <img src="/images/14-desktop-switch-model.jpg" style="width: 100%; height: 100%; object-fit: contain; background: #fafafa; border-radius: 8px;">
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 10px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">OpenRouter's default isn't free</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">Pick one with a [FREE] badge</h2>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.5;">
+      OpenRouter connects to <code>z-ai/glm-5.2</code> by default — a paid model ($0.96 in / $3.01 out per Mtok). Click <strong>Change</strong> in the wizard to switch. The picker lists every OpenRouter model; filter for the green <code>[FREE]</code> badge.
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px;">
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #FF6B35; letter-spacing: 1px;">STEP 1</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Click <strong>Change</strong> next to "Default model"</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #FF6B35; letter-spacing: 1px;">STEP 2</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Search <code>hy3</code> or <code>llama</code> or <code>qwen</code></span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #FF6B35; letter-spacing: 1px;">STEP 3</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Click any model with <code>[FREE]</code> green badge</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #FF6B35; letter-spacing: 1px;">STEP 4</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Click <strong>[ BEGIN ]</strong> to start the chat</span>
       </div>
     </div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #FF6B35; font-weight: 700;">model.api_key</div>
-      <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5;">
-        Your OpenRouter secret key. Stored in <code>~/.hermes/config.yaml</code>, file mode 0600 (owner-only).
-      </div>
-    </div>
-    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #FF6B35; font-weight: 700;">model.default</div>
-      <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5;">
-        Which model runs by default. The format is <code>provider/model-name</code> — OpenRouter uses its own slug names.
-      </div>
-    </div>
-    <div style="font-size: 11.5px; color: #888; line-height: 1.5;">
-      Verify with <code>hermes config</code> — it prints all settings, so you can confirm each one landed.
+    <div class="cl-desc-box">
+      <strong>Skip this step?</strong> The default paid model works too — you'll just see a small OpenRouter credit counter on the bottom-left. The free tier has rate limits but no expiry.
     </div>
   </div>
 </div>
@@ -519,8 +559,12 @@ layout: default
   </div>
 </div>
 
-<div class="cl-desc-box" style="margin-top: 24px;">
-  <strong>Change later, easily.</strong> Run <code>hermes model</code> at any time — an interactive picker lists every model you've used and lets you switch with one keystroke.
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #FFFFFF; border: 1px solid #FF6B35; border-radius: 10px; margin-top: 22px;">
+  <div>
+    <strong style="font-size: 13px; color: #2C2C2C;">Want the full live list?</strong>
+    <div style="font-size: 11.5px; color: #888; margin-top: 2px;">OpenRouter updates free models often — this link always shows the current ones.</div>
+  </div>
+  <a href="https://openrouter.ai/models?q=free" target="_blank" rel="noopener" style="display: inline-block; padding: 8px 16px; background: #FF6B35; color: white; border-radius: 6px; font-size: 12px; font-weight: 600; text-decoration: none; letter-spacing: 0.3px; white-space: nowrap;">Browse free models ↗</a>
 </div>
 
 ---
@@ -592,7 +636,6 @@ layout: default
     <div style="font-size: 12px; color: #5A5A5A; line-height: 1.5;">
       The agent will think for a few seconds, possibly call a tool, and stream a reply back. The first one is a warm-up; the second and third show real tool use.
     </div>
-
     <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
       <div style="display: flex; align-items: center; gap: 8px;">
         <span style="font-size: 10px; font-weight: 700; color: white; background: #4FA85C; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">EASY</span>
@@ -602,7 +645,6 @@ layout: default
         "Explain in 3 sentences what you can do that a normal chatbot can't."
       </div>
     </div>
-
     <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
       <div style="display: flex; align-items: center; gap: 8px;">
         <span style="font-size: 10px; font-weight: 700; color: white; background: #3974C5; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">TOOL USE</span>
@@ -612,7 +654,6 @@ layout: default
         "Read <code>~/.hermes/config.yaml</code> and tell me what model is set as default."
       </div>
     </div>
-
     <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
       <div style="display: flex; align-items: center; gap: 8px;">
         <span style="font-size: 10px; font-weight: 700; color: white; background: #7C3AED; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">MULTI-STEP</span>
@@ -634,6 +675,58 @@ layout: default
     </div>
     <div style="font-size: 11.5px; color: #888; line-height: 1.5;">
       Want to skip approvals? Add <code>--yolo</code> to the launch command. Not recommended for a first run.
+    </div>
+  </div>
+</div>
+
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-S4-004 · v3</div>
+
+# A real example — what you can do in one chat
+
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
+    <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
+      <span class="cl-image-pill">⑱ REAL OUTPUT</span>
+    </div>
+    <img src="/images/10-final-ppt.png" style="width: 100%; height: 100%; object-fit: contain; background: #fff; border-radius: 8px;">
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">This deck is built by Hermes</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">From one prompt to a finished PowerPoint slide</h2>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.5;">
+      The screenshot on the left is the result of a single chat with Hermes. The user typed:
+    </div>
+    <div style="background: #1E1E1E; color: #E6E6E6; border-radius: 10px; padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.7;">
+      <div style="color: #888; font-size: 10.5px; margin-bottom: 4px;">YOU TYPE</div>
+      <div style="color: #FF8C42;">"Use this PDF to create 1 PowerPoint slide that introduces the Smart Watch 4G."</div>
+    </div>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.5;">
+      Hermes then:
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px;">
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #4FA85C; letter-spacing: 1px;">①</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Read the PDF with <code>pymupdf</code> (installed automatically)</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #4FA85C; letter-spacing: 1px;">②</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Wrote a <code>extract_pdf.py</code> script and ran it</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #4FA85C; letter-spacing: 1px;">③</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Used a subagent to QA the spec sheet</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-size: 11px; font-weight: 700; color: #4FA85C; letter-spacing: 1px;">④</span>
+        <span style="font-size: 12px; color: #2C2C2C;">Generated the final <code>SmartWatch_Intro.pptx</code></span>
+      </div>
+    </div>
+    <div class="cl-desc-box">
+      <strong>Why this matters:</strong> zero PowerPoint skills needed. You asked in English, Hermes wrote Python, ran it, and gave you a file. The same pattern works for Excel, PDFs, web scraping, file conversion — anything you can describe.
     </div>
   </div>
 </div>
@@ -731,5 +824,5 @@ layout: default
 </div>
 
 <div style="position: absolute; bottom: 28px; left: 50px; font-size: 11px; color: #999;">
-  HM26Q3 · 19 slides · ~30 minutes · Hermes Agent v0.18+
+  HM26Q3 · 21 slides · ~30 minutes · Hermes Agent v0.18+
 </div>
