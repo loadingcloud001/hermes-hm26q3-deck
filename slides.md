@@ -75,7 +75,7 @@ layout: default
       <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Pick a free model</h3>
     </div>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      Set the default model to something free and reliable: Tencent Hy3, Meta Llama 3.3 70B, or Qwen 2.5 72B. No credit card needed.
+      Set the default model to something free and reliable: Tencent Hy3 or NVIDIA Nemotron 3. No credit card needed.
     </div>
   </div>
   <div class="cl-card-white">
@@ -167,7 +167,7 @@ layout: default
 
 # Step 1 — Go to the official download page
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
     <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
       <span class="cl-image-pill">① OFFICIAL SITE</span>
@@ -184,7 +184,7 @@ layout: default
       <strong>What you see on the right of this screenshot:</strong> the installer is already running, working through its checklist. You'll get here about 10 seconds after the .exe finishes downloading.
     </div>
     <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #FFFFFF; border: 1px solid #FF6B35; border-radius: 10px; margin-top: 4px;">
-      <span style="font-size: 12px; color: #3A3A3A;">Can't see the button? Open it in your browser:</span>
+      <span style="font-size: 12px; color: #3A3A3A;">Browser blocked the download? Open it directly:</span>
       <a href="https://hermes-agent.nousresearch.com/" target="_blank" rel="noopener" style="display: inline-block; padding: 7px 14px; background: #FF6B35; color: white; border-radius: 6px; font-size: 11.5px; font-weight: 600; text-decoration: none; letter-spacing: 0.3px;">Open download page ↗</a>
     </div>
     <div style="font-size: 11.5px; color: #888; line-height: 1.5; margin-top: 4px;">
@@ -201,7 +201,7 @@ layout: default
 
 # Run the installer
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
     <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
       <span class="cl-image-pill">② INSTALLER RUNNING</span>
@@ -238,7 +238,7 @@ layout: default
 
 # What the installer adds to your machine
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
     <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
       <span class="cl-image-pill">③ DEPENDENCIES</span>
@@ -307,21 +307,21 @@ layout: default
 # Why OpenRouter?
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px;">
-  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px">
     <div class="cl-eyebrow">ONE KEY, MANY MODELS</div>
     <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">200+ models, one bill</h3>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
       OpenRouter is a unified API that sits in front of every major LLM provider — Anthropic, OpenAI, Google, Meta, Mistral, DeepSeek, and dozens of open-source models. You sign up once, get one key, swap models by changing one string in your config.
     </div>
   </div>
-  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px">
     <div class="cl-eyebrow" style="color: #7C3AED;">FREE TIER EXISTS</div>
     <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Real free models, no card</h3>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      Several models stay free all day: Tencent Hy3, Meta Llama 3.3 70B, Qwen 2.5 72B, Google Gemini 2.0 Flash. No credit card on signup. Rate-limited but enough for personal use.
+      Several models stay free all day: Tencent Hy3, NVIDIA Nemotron 3 Super, NVIDIA Nemotron 3 Ultra. No credit card on signup. Rate-limited but enough for personal use.
     </div>
   </div>
-  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px">
     <div class="cl-eyebrow" style="color: #4FA85C;">YOU STAY IN CONTROL</div>
     <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Swap providers any time</h3>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
@@ -342,7 +342,7 @@ layout: default
 
 # Step 1 — Create your OpenRouter account
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
     <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
       <span class="cl-image-pill">④ SIGN UP</span>
@@ -372,7 +372,7 @@ layout: default
 
 # Step 2 — Generate an API key
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
     <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
       <span class="cl-image-pill">⑤ API KEYS</span>
@@ -389,7 +389,7 @@ layout: default
       <strong>⚠ Copy it now.</strong> OpenRouter only shows the full key once. After you close the dialog, you'll only see the prefix <code>sk-or-v1-3d6...</code>. Paste it into a password manager or a sticky note before moving on.
     </div>
     <div style="font-size: 11.5px; color: #888; line-height: 1.5; margin-top: 4px;">
-      You can revoke this key any time from the same page.
+      Tip: name the key <code>hermes-laptop</code> so you remember which device it's for. You can revoke this key any time from the same page.
     </div>
   </div>
 </div>
@@ -402,7 +402,7 @@ layout: default
 
 # Step 3 — Connect OpenRouter in the desktop app
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
     <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
       <span class="cl-image-pill">⑫ PICK OPENROUTER</span>
@@ -443,7 +443,7 @@ layout: default
 
 # Step 4 — Switch to a free model
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
     <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
       <span class="cl-image-pill">⑬ SWITCH TO FREE</span>
@@ -519,10 +519,10 @@ layout: default
     <div class="cl-eyebrow" style="color: #4FA85C;">RECOMMENDED DEFAULT</div>
     <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: #2C2C2C;">Tencent Hy3</h3>
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4; word-break: break-all;">
-      tencent/hunyuan-a13b-instruct:free
+      tencent/hy3:free
     </div>
     <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
-      Strong on English &amp; Chinese, fast, the most generous free quota of the three. Good all-rounder for daily chat and short code tasks.
+      Strong on English &amp; Chinese, fast, the most generous free quota of the three. The default you've seen running through this deck.
     </div>
     <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px;">
       <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Multilingual</span>
@@ -530,31 +530,31 @@ layout: default
     </div>
   </div>
   <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #3974C5;">
-    <div class="cl-eyebrow" style="color: #3974C5;">HEAVY THINKING</div>
-    <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: #2C2C2C;">Meta Llama 3.3 70B</h3>
+    <div class="cl-eyebrow" style="color: #3974C5;">REASONING</div>
+    <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: #2C2C2C;">NVIDIA Nemotron 3 Super</h3>
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4; word-break: break-all;">
-      meta-llama/llama-3.3-70b-instruct:free
+      nvidia/nemotron-3-super-120b-a12b:free
     </div>
     <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
-      Best free model for English reasoning and code. Slower than Hy3, but more careful. Use this for multi-step agent work.
+      Massive 120B-parameter MoE model. Slower than Hy3, but stronger on multi-step reasoning. Use this when agent work chains many tool calls.
     </div>
     <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px;">
       <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Reasoning</span>
-      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Code</span>
+      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">MoE</span>
     </div>
   </div>
   <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #D0832F;">
-    <div class="cl-eyebrow" style="color: #D0832F;">LIGHTWEIGHT</div>
-    <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: #2C2C2C;">Qwen 2.5 72B</h3>
+    <div class="cl-eyebrow" style="color: #D0832F;">MULTILINGUAL</div>
+    <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: #2C2C2C;">NVIDIA Nemotron 3 Ultra</h3>
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4; word-break: break-all;">
-      qwen/qwen-2.5-72b-instruct:free
+      nvidia/nemotron-3-ultra-550b-a55b:free
     </div>
     <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
-      Excellent for code generation and tool use. Sometimes rate-limited during peak hours; keep Hy3 or Llama as backup.
+      550B parameters, NVIDIA's flagship open model. Best free option for English reasoning and long-context work. Slower to first token.
     </div>
     <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px;">
-      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Coding</span>
-      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Tool use</span>
+      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Long context</span>
+      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Code</span>
     </div>
   </div>
 </div>
@@ -597,7 +597,7 @@ layout: default
 
 # Launch Hermes Desktop
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
     <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
       <span class="cl-image-pill">⑦ DESKTOP UI</span>
@@ -629,7 +629,7 @@ layout: default
 
 # Type your first prompt
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
     <div class="cl-eyebrow">Try one of these</div>
     <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">Three prompts that show off what Hermes can do</h2>
@@ -665,13 +665,22 @@ layout: default
     </div>
   </div>
   <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
-    <div class="cl-eyebrow">What's happening under the hood</div>
+    <div class="cl-eyebrow">What good looks like</div>
     <h2 style="margin: 0; font-size: 20px; line-height: 1.25;">It's not just chat</h2>
-    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55;">
-      When you ask Hermes to read or write files, it calls tools — not just text generation. You'll see lines like <code>Skill View 72ms</code> or <code>Running code import subprocess, sys</code> scroll past as it works.
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.5;">
+      A real reply streams in over a few seconds. You'll see lines like <code>Skill View 72ms</code> or <code>Running code import subprocess, sys</code> scroll past as Hermes works. Then a final answer.
     </div>
     <div class="cl-desc-box">
       <strong>You stay in control:</strong> by default Hermes asks before running any shell command that looks destructive (deletes files, force-pushes, etc.). You see the command, you approve or deny.
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; padding: 10px 12px;">
+      <div style="font-size: 10.5px; color: #888; letter-spacing: 1px; font-weight: 700; margin-bottom: 6px;">SAMPLE REPLY</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #5A6470; line-height: 1.5;">
+        <span style="color: #4FA85C;">●</span> Thinking — read config...<br>
+        <span style="color: #4FA85C;">●</span> Skill View 80ms<br>
+        <span style="color: #FF6B35;">→</span> Default model: <code>tencent/hy3:free</code><br>
+        <span style="color: #4FA85C;">●</span> Done.
+      </div>
     </div>
     <div style="font-size: 11.5px; color: #888; line-height: 1.5;">
       Want to skip approvals? Add <code>--yolo</code> to the launch command. Not recommended for a first run.
@@ -687,7 +696,7 @@ layout: default
 
 # A real example — what you can do in one chat
 
-<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 408px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
   <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
     <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
       <span class="cl-image-pill">⑱ REAL OUTPUT</span>
@@ -739,41 +748,47 @@ layout: default
 
 # Three things that go wrong (and how to fix them)
 
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 28px;">
-  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #D8556A;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; max-width: 880px; margin-left: auto; margin-right: auto;">
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 8px; border-top: 4px solid #D8556A; padding: 14px 16px;">
     <div class="cl-eyebrow" style="color: #D8556A;">ERROR</div>
-    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">"HTTP 400: No models provided"</h3>
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4;">
+    <h3 style="margin: 0; font-size: 15px; font-weight: 700; color: #2C2C2C;">"HTTP 400: No models provided"</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #888; line-height: 1.4;">
       <strong>Cause:</strong> <code>config.yaml</code> saved with a UTF-8 BOM (Notepad does this).
     </div>
-    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
+    <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5; flex: 1;">
       Re-save as UTF-8 <em>without</em> BOM. Run <code>hermes config edit</code> — it writes cleanly.
     </div>
   </div>
-  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #D9A93B;">
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 8px; border-top: 4px solid #D9A93B; padding: 14px 16px;">
     <div class="cl-eyebrow" style="color: #D9A93B;">SLOW</div>
-    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">First reply takes 30+ seconds</h3>
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4;">
+    <h3 style="margin: 0; font-size: 15px; font-weight: 700; color: #2C2C2C;">First reply takes 30+ seconds</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #888; line-height: 1.4;">
       <strong>Cause:</strong> OpenRouter is cold-starting the model, or you're rate-limited.
     </div>
-    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
+    <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5; flex: 1;">
       Wait. If it persists past a minute, switch model with <code>hermes model</code> and try a different free model.
     </div>
   </div>
-  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #3974C5;">
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 8px; border-top: 4px solid #3974C5; padding: 14px 16px;">
     <div class="cl-eyebrow" style="color: #3974C5;">STUCK</div>
-    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">Agent hangs on a tool call</h3>
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4;">
+    <h3 style="margin: 0; font-size: 15px; font-weight: 700; color: #2C2C2C;">Agent hangs on a tool call</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #888; line-height: 1.4;">
       <strong>Cause:</strong> network timeout, or the model is stuck waiting on you.
     </div>
-    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
+    <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5; flex: 1;">
       In the desktop app: press <strong>Esc</strong> or click the stop button. In the CLI: <code>Ctrl+C</code>. Then <code>/retry</code> to send the prompt again.
     </div>
   </div>
-</div>
-
-<div class="cl-desc-box" style="margin-top: 24px;">
-  <strong>Still broken?</strong> Run <code>hermes doctor</code> — it checks every dependency and config value, and tells you exactly what's wrong.
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 8px; border-top: 4px solid #7C3AED; padding: 14px 16px;">
+    <div class="cl-eyebrow" style="color: #7C3AED;">STILL BROKEN</div>
+    <h3 style="margin: 0; font-size: 15px; font-weight: 700; color: #2C2C2C;">Nothing above matches</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #888; line-height: 1.4;">
+      <strong>One command:</strong> <code>hermes doctor</code>
+    </div>
+    <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5; flex: 1;">
+      Checks every dependency, every config value, every API key. Add <code>--fix</code> for auto-repair.
+    </div>
+  </div>
 </div>
 
 ---
@@ -784,43 +799,44 @@ layout: default
 
 # You're set up
 
-<div style="font-size: 18px; color: #3A3A3A; line-height: 1.55; margin-top: 8px; max-width: 720px;">
+<div style="font-size: 16px; color: #3A3A3A; line-height: 1.55; margin-top: 6px; max-width: 720px;">
   You have Hermes Desktop running on Windows, pointed at OpenRouter's free tier, and you've sent it a prompt. Everything else is upside.
 </div>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 28px;">
-  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; max-width: 880px;">
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 6px; padding: 14px 16px;">
     <div class="cl-eyebrow">LEVEL 2 — SKILLS</div>
-    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Teach it your workflow</h3>
-    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      <code>hermes skills browse</code> installs community skills (Telegram bots, PDF readers, etc.). One command, restart, done.
+    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">Teach it your workflow</h3>
+    <div style="font-size: 12px; color: #5A5A5A; line-height: 1.5;">
+      <code>hermes skills browse</code> installs community skills (Telegram bots, PDF readers, etc.).
     </div>
   </div>
-  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 6px; padding: 14px 16px;">
     <div class="cl-eyebrow" style="color: #7C3AED;">LEVEL 3 — MEMORY</div>
-    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">It remembers next session</h3>
-    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
+    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">It remembers next session</h3>
+    <div style="font-size: 12px; color: #5A5A5A; line-height: 1.5;">
       <code>/memory</code> stores facts about you. Tell it "I use VS Code" once, never again.
     </div>
   </div>
-  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 6px; padding: 14px 16px;">
     <div class="cl-eyebrow" style="color: #4FA85C;">LEVEL 4 — MESSAGING</div>
-    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Run it on Telegram / Discord</h3>
-    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      <code>hermes gateway setup</code> connects 20+ chat platforms. Same agent, different surface.
+    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">Run it on Telegram / Discord</h3>
+    <div style="font-size: 12px; color: #5A5A5A; line-height: 1.5;">
+      <code>hermes gateway setup</code> connects 20+ chat platforms.
     </div>
   </div>
-  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 6px; padding: 14px 16px;">
     <div class="cl-eyebrow" style="color: #D0832F;">LEVEL 5 — CRON</div>
-    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Schedule it to run</h3>
-    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      <code>hermes cron create</code> makes the agent run on a timer. Morning briefings, weekly cleanups.
+    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">Schedule it to run</h3>
+    <div style="font-size: 12px; color: #5A5A5A; line-height: 1.5;">
+      <code>hermes cron create</code> makes the agent run on a timer.
     </div>
   </div>
 </div>
 
-<div style="text-align: center; margin-top: 40px; font-size: 16px; color: #5A5A5A;">
-  Type <code>/help</code> in the chat any time. It lists every command, skill, and setting.
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 12px; flex-wrap: wrap;">
+  <a href="https://hermes-agent.nousresearch.com/docs/" target="_blank" rel="noopener" style="display: inline-block; padding: 7px 14px; background: #FF6B35; color: white; border-radius: 6px; font-size: 12px; font-weight: 600; text-decoration: none; letter-spacing: 0.3px;">Read the docs ↗</a>
+  <span style="font-size: 12px; color: #888;">or type <code>/help</code> in the chat any time.</span>
 </div>
 
 <div style="position: absolute; bottom: 28px; left: 50px; font-size: 11px; color: #999;">
