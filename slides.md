@@ -1,33 +1,37 @@
 ---
 theme: default
-title: 'Hermes Agent — Install & Use'
+title: 'Hermes Agent — Install & First Run'
 info: |
-  ## Hermes Agent — Install & Use
-  A step-by-step walkthrough for new users
-  Ref: HM26Q3 · v2
+  ## Hermes Agent — Install & First Run
+  Get Hermes Desktop running on Windows in ~30 minutes.
+  Ref: HM26Q3 · v3
   Presented by: Charles Lo · 2026-07
 drawings:
   persist: false
 transition: slide-left
 mdc: true
+canvasWidth: 980
+aspectRatio: '16/9'
 ---
 
-<div style="position: absolute; inset: 0; background: #FF6B35; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 80px; text-align: center;">
+<div class="cl-ref-id">HM26Q3-COV-001 · v3</div>
 
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 32px;">
+<div style="position: absolute; inset: 0; background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%); color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 80px; text-align: center;">
+
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.9; margin-bottom: 32px;">
   H M 2 6 Q 3  ·  2 0 2 6 - Q 3
 </div>
 
 <h1 style="font-size: 56px; font-weight: 700; color: white; line-height: 1.15; margin: 0 0 18px; letter-spacing: -1px;">
-  Hermes Agent<br>Install &amp; Use
+  Hermes Agent<br>Install &amp; First Run
 </h1>
 
-<div style="font-size: 22px; font-weight: 400; color: white; opacity: 0.95; margin-bottom: 40px;">
-  From <code style="background: rgba(255,255,255,0.18); color: white; padding: 2px 9px; border-radius: 5px; font-size: 20px; font-family: 'JetBrains Mono', monospace;">Download</code> to a working bot on Telegram
+<div style="font-size: 22px; font-weight: 400; color: white; opacity: 0.95; margin-bottom: 24px; max-width: 720px;">
+  Get a working AI agent on your Windows desktop in about 30 minutes — using a free OpenRouter model.
 </div>
 
 <div style="font-size: 14px; color: white; opacity: 0.85; margin-bottom: 56px;">
-  Charles Lo · 2026-07 · Windows desktop edition
+  Charles Lo · 2026-07 · Windows edition
 </div>
 
 <a href="#" target="_blank" style="display: inline-block; padding: 12px 32px; border: 1.5px solid white; color: white; border-radius: 999px; font-size: 13px; font-weight: 600; letter-spacing: 2.5px; text-decoration: none; text-transform: uppercase;">PRESS SPACE →</a>
@@ -38,587 +42,694 @@ mdc: true
 layout: default
 ---
 
-<div class="cl-ref-id">HM26Q3-AGD-001 · v2</div>
+<div class="cl-ref-id">HM26Q3-AGD-001 · v3</div>
 
 # Agenda
 
-<div class="grid grid-cols-3 gap-5" style="margin-top: 36px;">
-  <div class="cl-card">
-    <div class="cl-letter-badge">a</div>
-    <h3 style="margin: 14px 0 8px; font-size: 18px; font-weight: 700; color: #2C2C2C; line-height: 1.3;">Install on Windows</h3>
+<div style="font-size: 15px; color: #5A5A5A; margin-top: -8px; margin-bottom: 24px; max-width: 720px;">
+  Four short sections. By the end, you'll have Hermes Desktop open, configured against OpenRouter's free tier, and answering your first prompt.
+</div>
+
+<div class="grid grid-cols-2 gap-5" style="margin-top: 12px;">
+  <div class="cl-card-white">
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+      <div class="cl-num-badge" style="background: #FF6B35;">1</div>
+      <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Download &amp; Install</h3>
+    </div>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      Download the Hermes Desktop installer. Run it. Done — chat app, model picker, and skills all ready.
+      Get the official Windows installer from hermes-agent.nousresearch.com, run it, and let it set up Python, uv, Git, and the Hermes desktop app.
     </div>
   </div>
-  <div class="cl-card">
-    <div class="cl-letter-badge">b</div>
-    <h3 style="margin: 14px 0 8px; font-size: 18px; font-weight: 700; color: #2C2C2C; line-height: 1.3;">Choose a provider</h3>
+  <div class="cl-card-white">
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+      <div class="cl-num-badge" style="background: #7C3AED;">2</div>
+      <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Set up OpenRouter</h3>
+    </div>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      Three setup modes. OpenRouter is fastest — one key covers 200+ models.
+      Create an OpenRouter account, generate an API key, point Hermes at it via <code>hermes config</code>. Free tier covers dozens of models.
     </div>
   </div>
-  <div class="cl-card">
-    <div class="cl-letter-badge">c</div>
-    <h3 style="margin: 14px 0 8px; font-size: 18px; font-weight: 700; color: #2C2C2C; line-height: 1.3;">First conversation</h3>
+  <div class="cl-card-white">
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+      <div class="cl-num-badge" style="background: #4FA85C;">3</div>
+      <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Pick a free model</h3>
+    </div>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      Open Hermes Desktop, type a real prompt in the chat box, watch the agent work. Three starter prompts included.
+      Set the default model to something free and reliable: Tencent Hy3, Meta Llama 3.3 70B, or Qwen 2.5 72B. No credit card needed.
     </div>
   </div>
-  <div class="cl-card">
-    <div class="cl-letter-badge">d</div>
-    <h3 style="margin: 14px 0 8px; font-size: 18px; font-weight: 700; color: #2C2C2C; line-height: 1.3;">Verify &amp; key features</h3>
-    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      Make sure <code>hermes --continue</code> works. Then: slash commands, multi-line, interrupt.
+  <div class="cl-card-white">
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+      <div class="cl-num-badge" style="background: #D0832F;">4</div>
+      <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Your first chat</h3>
     </div>
-  </div>
-  <div class="cl-card">
-    <div class="cl-letter-badge">e</div>
-    <h3 style="margin: 14px 0 8px; font-size: 18px; font-weight: 700; color: #2C2C2C; line-height: 1.3;">Next layer &amp; Q&amp;A</h3>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      Bots, skills, MCP, voice — and the failure modes + recovery toolkit that fix the rest.
+      Launch the desktop app, type a real prompt, watch the agent work. Three starter prompts included.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">21 slides · ~15 minutes · Windows desktop edition</div>
+<div style="position: absolute; bottom: 28px; left: 50px; font-size: 11px; color: #999;">
+  HM26Q3 · 19 slides · ~30 minutes · Windows desktop
+</div>
 
 ---
 layout: default
 ---
 
-<div class="cl-ref-id">HM26Q3-WHY-001 · v1</div>
+<div class="cl-ref-id">HM26Q3-WHY-001 · v3</div>
 
-# What you'll get
+# What you'll have at the end
 
-One installer, three things running on your Windows machine.
-
-<div class="grid grid-cols-2 gap-6" style="margin-top: 28px;">
-
-  <div>
-    <div class="cl-eyebrow" style="margin-bottom: 12px;">Installed by the installer</div>
-    <div class="cl-desc-box" style="margin-bottom: 14px;">
-      <strong style="color: #2C2C2C;">hermes</strong> — the desktop chat app. Native Windows window, no terminal required.
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 16px; height: 408px;">
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">After 30 minutes</div>
+    <h2 style="margin: 0; font-size: 26px; line-height: 1.25;">A real AI agent that lives on your Windows machine</h2>
+    <div style="font-size: 14px; color: #3A3A3A; line-height: 1.6; max-width: 480px;">
+      Hermes Desktop is a native chat app powered by an LLM you control. It can read files, run shell commands, edit code, install tools, and remember what you told it last session. The model behind it is just a config setting — swap it any time.
     </div>
-    <div class="cl-desc-box" style="margin-bottom: 14px;">
-      <strong style="color: #2C2C2C;">hermes-cli</strong> — command-line entry point, on your PATH. Used by the desktop app and by scripts; you don't have to invoke it manually.
-    </div>
-    <div class="cl-desc-box">
-      <strong style="color: #2C2C2C;">Default skills</strong> — installed to <code>%LOCALAPPDATA%\hermes\skills\</code>. Ready to use, no extra setup.
+    <div class="cl-desc-box" style="margin-top: 8px;">
+      <strong>What you won't need:</strong> a credit card, a Nous Portal account, or to compile anything from source. Just the installer and one API key.
     </div>
   </div>
-
-  <div>
-    <div class="cl-eyebrow-purple" style="margin-bottom: 12px;">You can do, on day one</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; background: var(--card-peach); border-left: 3px solid var(--accent-orange); border-radius: 8px; margin-bottom: 10px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13px; color: #3A3A3A; line-height: 1.5;"><strong style="color: #2C2C2C;">Chat in a window.</strong> Type a request, get a real answer with tool calls. Files, terminal, web search — all from inside the app.</div>
+  <div style="display: flex; flex-direction: column; gap: 10px; overflow: hidden; min-height: 0;">
+    <div class="cl-card-orange-top" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+      <div style="display: flex; align-items: baseline; gap: 12px;">
+        <span style="font-size: 36px; font-weight: 800; color: #FF6B35;">~30</span>
+        <span style="font-size: 13px; color: #5A5A5A;">minutes total</span>
+      </div>
+      <div style="font-size: 11.5px; color: #888; margin-top: 4px;">From cold Windows to first agent reply.</div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; background: var(--card-peach); border-left: 3px solid var(--accent-orange); border-radius: 8px; margin-bottom: 10px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13px; color: #3A3A3A; line-height: 1.5;"><strong style="color: #2C2C2C;">Pick your model.</strong> OpenRouter routes to Claude, GPT, Gemini, Llama, DeepSeek, Mistral — switch from the model picker, no restart.</div>
+    <div class="cl-card-orange-top" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+      <div style="display: flex; align-items: baseline; gap: 12px;">
+        <span style="font-size: 36px; font-weight: 800; color: #FF6B35;">$0</span>
+        <span style="font-size: 13px; color: #5A5A5A;">to run</span>
+      </div>
+      <div style="font-size: 11.5px; color: #888; margin-top: 4px;">OpenRouter free tier + local compute.</div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; background: var(--card-peach); border-left: 3px solid var(--accent-orange); border-radius: 8px; margin-bottom: 10px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13px; color: #3A3A3A; line-height: 1.5;"><strong style="color: #2C2C2C;">Use skills.</strong> <code>/k8s</code>, <code>/git</code>, <code>/pdf</code> — type <code>/</code> in the chat box for the full list.</div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; background: var(--card-peach); border-left: 3px solid var(--accent-orange); border-radius: 8px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13px; color: #3A3A3A; line-height: 1.5;"><strong style="color: #2C2C2C;">Stay in flow.</strong> Voice mode (Ctrl+B), session resume, and the gateway for Telegram/Discord/Slack — all toggleable from the menu.</div>
+    <div class="cl-card-orange-top" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+      <div style="display: flex; align-items: baseline; gap: 12px;">
+        <span style="font-size: 36px; font-weight: 800; color: #FF6B35;">20+</span>
+        <span style="font-size: 13px; color: #5A5A5A;">models to swap between</span>
+      </div>
+      <div style="font-size: 11.5px; color: #888; margin-top: 4px;">Change one config line, restart, done.</div>
     </div>
   </div>
-
 </div>
 
-<div class="cl-footer-meta">Designed for Windows 10/11 · x64 · ARM64 also supported</div>
-
 ---
-layout: default
+layout: section
 ---
 
-<div style="position: absolute; inset: 0; background: #FF6B35; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 80px; text-align: center;">
+<div class="cl-ref-id">HM26Q3-S1-001 · v3</div>
 
-<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 28px;">
-  S E C T I O N  ·  0 1
+<div style="position: absolute; inset: 0; background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 24px;">
+  STEP 1 OF 4
 </div>
 
-<h1 style="font-size: 64px; font-weight: 700; color: white; line-height: 1.1; margin: 0 0 20px; letter-spacing: -1.5px;">
-  Install
+<h1 style="font-size: 64px; font-weight: 800; color: white; margin: 0; letter-spacing: -1.5px; line-height: 1.1;">
+  Download &amp; Install
 </h1>
 
-<div style="font-size: 22px; font-weight: 400; color: white; opacity: 0.95; max-width: 600px; line-height: 1.4;">
-  One installer. One click.<br>Everything wired up.
-</div>
-
-<div style="position: absolute; bottom: 32px; left: 50px; font-size: 12px; color: white; opacity: 0.7; letter-spacing: 1px;">
-  HM26Q3-SEC-01
+<div style="font-size: 20px; color: white; opacity: 0.9; margin-top: 28px; max-width: 620px; line-height: 1.4;">
+  Get the official Windows installer and let it set up everything you need.
 </div>
 
 </div>
 
 ---
 layout: default
-
-# ===== NEW INSTALL SECTION — uses real screenshots from user's recording =====
-
 ---
 
-<div class="cl-ref-id">HM26Q3-INS-01 · v1</div>
+<div class="cl-ref-id">HM26Q3-S1-002 · v3</div>
 
-# Step 1 of 4 — Visit the official blue homepage
+# Step 1 — Go to the official download page
 
-Open Edge or Chrome and go to the <strong style="color:#FF6B35;">official blue homepage</strong>: <a href="https://hermes-agent.nousresearch.com" target="_blank" style="font-weight:700;color:#FF6B35;">hermes-agent.nousresearch.com</a>. On this blue page you will see three platform cards. Click the <strong style="color:#FF6B35;">Windows</strong> card's <strong style="color:#FF6B35;">DOWNLOAD</strong> button.
-
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); position: relative;">
-    <img src="/install-steps/01-download-page.png" style="display: block; width: 100%; height: auto;" />
-    <!-- Annotation arrow pointing at the Windows download button -->
-    <div style="position: absolute; top: 18%; left: 52%; transform: translate(-50%, -50%); pointer-events: none; z-index: 10;">
-      <div style="background: #FF6B35; color: white; padding: 6px 14px; border-radius: 9999px; font-size: 13px; font-weight: 700; box-shadow: 0 3px 12px rgba(255,107,53,0.45); white-space: nowrap;">
-        ⬇ Click this Download button
-      </div>
-      <div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 10px solid #FF6B35; margin: 2px auto 0;"></div>
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
+    <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
+      <span class="cl-image-pill">① OFFICIAL SITE</span>
+    </div>
+    <img src="/images/01-website-hero.png" style="width: 100%; height: 100%; object-fit: contain; background: #0a0a0a; border-radius: 8px;">
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">URL to open</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">hermes-agent.nousresearch.com</h2>
+    <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.6;">
+      This is the official Nous Research page for Hermes Agent. The blue <strong>INSTALL</strong> button in the centre takes you to the download links. Click <code>DOWNLOAD FOR WINDOWS</code> and your browser pulls down <code>Hermes-Setup (X).exe</code>.
+    </div>
+    <div class="cl-desc-box">
+      <strong>What you see on the right of this screenshot:</strong> the installer is already running, working through its checklist. You'll get here about 10 seconds after the .exe finishes downloading.
+    </div>
+    <div style="font-size: 11.5px; color: #888; line-height: 1.5; margin-top: 4px;">
+      File size: ~50–80 MB · takes 10–60 seconds on a normal connection.
     </div>
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">Pick your platform</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Open <strong style="color: #2C2C2C;">Edge</strong> and visit <a href="https://hermes-agent.nousresearch.com" target="_blank" style="color: #FF6B35; font-weight: 600;">hermes-agent.nousresearch.com</a>.
-      </div>
+</div>
+
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-S1-003 · v3</div>
+
+# Run the installer
+
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
+    <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
+      <span class="cl-image-pill">② INSTALLER RUNNING</span>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Three download cards appear: <strong style="color: #2C2C2C;">macOS</strong>, <strong style="color: #FF6B35;">Windows</strong>, <strong style="color: #2C2C2C;">Linux</strong>. Click <strong style="color: #FF6B35;">DOWNLOAD</strong> under Windows.
-      </div>
+    <img src="/images/02-installer-running.png" style="width: 100%; height: 100%; object-fit: contain; background: #fff; border-radius: 8px;">
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">Double-click the .exe</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">A guided setup, not a silent installer</h2>
+    <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.6;">
+      Windows will ask "Do you want to allow this app to make changes?" — click <strong>Yes</strong>. The installer opens a window with a checklist.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Browser saves <code>Hermes-Setup.exe</code> to <strong style="color: #2C2C2C;">Downloads</strong>. ~240 MB.
-      </div>
+    <div class="cl-desc-box">
+      <strong>What it shows you:</strong> every step it's about to take, in plain English. You can read each line before it runs. No silent registry edits.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Or scroll down — there's an <strong style="color: #2C2C2C;">INSTALL FROM TERMINAL</strong> section with curl / iex commands if you prefer CLI.
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 4px;">
+      <div style="background: #FFF8F4; border: 1px solid #FFE3D6; border-radius: 8px; padding: 8px 10px;">
+        <div style="font-size: 10px; color: #888; letter-spacing: 1px;">DURATION</div>
+        <div style="font-size: 16px; font-weight: 700; color: #FF6B35;">3–5 min</div>
+      </div>
+      <div style="background: #FFF8F4; border: 1px solid #FFE3D6; border-radius: 8px; padding: 8px 10px;">
+        <div style="font-size: 10px; color: #888; letter-spacing: 1px;">REBOOT NEEDED</div>
+        <div style="font-size: 16px; font-weight: 700; color: #FF6B35;">No</div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 1 of 4 · real recording frame · next: run the installer</div>
-
+---
+layout: default
 ---
 
-<div class="cl-ref-id">HM26Q3-INS-02 · v1</div>
+<div class="cl-ref-id">HM26Q3-S1-004 · v3</div>
 
-# Step 2 of 4 — Run the installer
+# What the installer adds to your machine
 
-Double-click <code>Hermes-Setup.exe</code> from your browser downloads. A 16-step installer dialog opens — let it run unattended.
-
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 400px; position: relative;">
-    <img src="/install-steps/03-installer-running.png" style="display: block; max-width: 100%; max-height: 480px; height: auto;" />
-    <div style="position: absolute; top: 18%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; z-index: 10;">
-      <div style="background: #FF6B35; color: white; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 700; box-shadow: 0 2px 10px rgba(255,107,53,0.5); white-space: nowrap;">
-        ⏳ Let it reach 100%
-      </div>
-      <div style="width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 9px solid #FF6B35; margin: 2px auto 0;"></div>
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
+    <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
+      <span class="cl-image-pill">③ DEPENDENCIES</span>
     </div>
+    <img src="/images/03-installer-deps.png" style="width: 100%; height: 100%; object-fit: contain; background: #fff; border-radius: 8px;">
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">What the installer does</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Opens a window titled <strong style="color: #2C2C2C;">Hermes</strong> with 16 steps: Installing uv package manager · Verifying Python 3.11 · Installing Git · Detecting Node.js · Installing ripgrep and ffmpeg · Cloning Hermes repository · Creating Python virtual environment · Installing Python dependencies · Installing Node.js dependencies · Building desktop app · Adding Hermes to PATH · Writing configuration templates.
-      </div>
+  <div style="display: flex; flex-direction: column; gap: 10px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">Five things, one installer</div>
+    <h2 style="margin: 0; font-size: 20px; line-height: 1.25;">Python, uv, Git, Node, and the app itself</h2>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.5;">
+      Hermes needs a Python runtime and a few standard developer tools. The installer fetches any you're missing.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Each step shows timing — e.g. <em>Verifying Python 3.11 · 957ms</em>. Total ~1–3 min.
+    <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 4px;">
+      <div style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 8px;">
+        <span style="font-size: 16px; font-weight: 800; color: #FF6B35; width: 22px;">1</span>
+        <span style="font-size: 13px; color: #2C2C2C;"><strong>Node.js</strong> — runtime for the desktop shell</span>
       </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        <strong style="color: #2C2C2C;">Don't close it.</strong> The desktop app needs PATH entries, Start menu link, and the <code>~/.hermes/</code> config dir.
+      <div style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 8px;">
+        <span style="font-size: 16px; font-weight: 800; color: #FF6B35; width: 22px;">2</span>
+        <span style="font-size: 13px; color: #2C2C2C;"><strong>Python 3.11+</strong> — the agent runs on this</span>
       </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        On completion, a <strong style="color: #FF6B35;">Finish</strong> screen appears — click it to launch Hermes Desktop.
+      <div style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 8px;">
+        <span style="font-size: 16px; font-weight: 800; color: #FF6B35; width: 22px;">3</span>
+        <span style="font-size: 13px; color: #2C2C2C;"><strong>uv</strong> — fast Python package manager</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 8px;">
+        <span style="font-size: 16px; font-weight: 800; color: #FF6B35; width: 22px;">4</span>
+        <span style="font-size: 13px; color: #2C2C2C;"><strong>Git for Windows</strong> — for skills that clone repos</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 8px;">
+        <span style="font-size: 16px; font-weight: 800; color: #FF6B35; width: 22px;">5</span>
+        <span style="font-size: 13px; color: #2C2C2C;"><strong>Hermes Desktop</strong> — the chat app itself</span>
       </div>
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 2 of 4 · real recording frame · next: Hermes Desktop launches</div>
-
+---
+layout: section
 ---
 
-<div class="cl-ref-id">HM26Q3-INS-03 · v1</div>
+<div class="cl-ref-id">HM26Q3-S2-001 · v3</div>
 
-# Step 3 of 4 — Hermes Desktop launches
+<div style="position: absolute; inset: 0; background: linear-gradient(135deg, #7C3AED 0%, #A855F7 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
 
-The installer finishes, the desktop app opens full-screen. If a "Sign in with Nous Portal" dialog appears, **close it** — we will use OpenRouter directly in the next section.
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 24px;">
+  STEP 2 OF 4
+</div>
 
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/install-steps/05-hermes-desktop-launched.png" style="display: block; width: 100%; height: auto; border-radius: 10px;" />
+<h1 style="font-size: 64px; font-weight: 800; color: white; margin: 0; letter-spacing: -1.5px; line-height: 1.1;">
+  Set up OpenRouter
+</h1>
+
+<div style="font-size: 20px; color: white; opacity: 0.9; margin-top: 28px; max-width: 620px; line-height: 1.4;">
+  One account, one API key, 200+ models.
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-S2-002 · v3</div>
+
+# Why OpenRouter?
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px;">
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+    <div class="cl-eyebrow">ONE KEY, MANY MODELS</div>
+    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">200+ models, one bill</h3>
+    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
+      OpenRouter is a unified API that sits in front of every major LLM provider — Anthropic, OpenAI, Google, Meta, Mistral, DeepSeek, and dozens of open-source models. You sign up once, get one key, swap models by changing one string in your config.
+    </div>
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">Skip the welcome dialog</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Hermes Desktop opens full-screen. If a sign-in dialog appears, click <strong style="color: #FF6B35;">Close</strong> — we will set up the model in the next section.
-      </div>
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+    <div class="cl-eyebrow" style="color: #7C3AED;">FREE TIER EXISTS</div>
+    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Real free models, no card</h3>
+    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
+      Several models stay free all day: Tencent Hy3, Meta Llama 3.3 70B, Qwen 2.5 72B, Google Gemini 2.0 Flash. No credit card on signup. Rate-limited but enough for personal use.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        The left sidebar shows <em>New chat · MCP · Files · API Token · Auto-Login</em>. The model picker at bottom-right reads <em>OpenRouter</em>.
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Status bar at the bottom shows <strong style="color: #2C2C2C;">Gateway ready · Agents · Cron</strong> when the desktop app has finished loading.
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Hermes Desktop is now ready. Next: add your OpenRouter API key.
-      </div>
+  </div>
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+    <div class="cl-eyebrow" style="color: #4FA85C;">YOU STAY IN CONTROL</div>
+    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Swap providers any time</h3>
+    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
+      Tired of free models? Add a paid key from any other provider later. The model setting is just a string — <code>provider/model-name</code>. No lock-in.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 3 of 4 · real recording frame · next: set up OpenRouter</div>
+<div class="cl-desc-box" style="margin-top: 32px;">
+  <strong>What OpenRouter is not:</strong> a model. It's a router. The actual AI runs on someone else's GPU; OpenRouter just relays the request and handles billing.
+</div>
+
+---
+layout: default
 ---
 
-<div class="cl-ref-id">HM26Q3-SET-02 · v1</div>
+<div class="cl-ref-id">HM26Q3-S2-003 · v3</div>
 
-# Step 2 of 3 — Create an API key
+# Step 1 — Create your OpenRouter account
 
-OpenRouter gives you one key that works across every model. No per-vendor credentials.
-
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/setup-steps/05-openrouter-keys-page.png" style="display: block; width: 100%; height: auto; border-radius: 10px;" />
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
+    <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
+      <span class="cl-image-pill">④ SIGN UP</span>
+    </div>
+    <img src="/images/04-openrouter-signup.png" style="width: 100%; height: 100%; object-fit: contain; background: #0a0a0a; border-radius: 8px;">
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">From your dashboard</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Click your avatar → <strong style="color: #FF6B35;">Keys</strong> (or go to <a href="https://openrouter.ai/settings/keys" target="_blank" style="color: #FF6B35; font-weight: 600;">openrouter.ai/settings/keys</a>).
-      </div>
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">URL</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">openrouter.ai → Sign Up</h2>
+    <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.6;">
+      Click <strong>Sign Up</strong> in the top-right. You can register with GitHub, Google, or email + password. All three are equivalent for free-tier use.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Click <strong style="color: #FF6B35;">+ New Key</strong>. Give it a name (e.g. <em>Hermes Desktop</em>).
-      </div>
+    <div class="cl-desc-box">
+      <strong>Watch out for:</strong> the form asks for an email but doesn't require verification to start using the free tier. You can skip the "verify your email" step until later.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Copy the key — it starts with <code style="font-size: 12px;">sk-or-v1-…</code>. You will <strong style="color: #2C2C2C;">only see it once</strong>.
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Set a spending limit if you like — <em>Keys → click the key → Limit</em>. Default is $0 (free models only).
-      </div>
+    <div style="font-size: 11.5px; color: #888; line-height: 1.5; margin-top: 4px;">
+      Time: 30 seconds · No credit card · Email-only signup works on mobile too.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 2 of 3 · real recording frame · next: add it to Hermes</div>
-
+---
+layout: default
 ---
 
-<div class="cl-ref-id">HM26Q3-SET-03 · v1</div>
+<div class="cl-ref-id">HM26Q3-S2-004 · v3</div>
 
-# Step 3 of 3 — Add the key to Hermes Desktop
+# Step 2 — Generate an API key
 
-Back in the desktop app, open Settings, paste the key, pick a model. Done.
-
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/setup-steps/07-config-set-page.png" style="display: block; width: 100%; height: auto; border-radius: 10px;" />
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
+    <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
+      <span class="cl-image-pill">⑤ API KEYS</span>
+    </div>
+    <img src="/images/05-openrouter-keys.png" style="width: 100%; height: 100%; object-fit: contain; background: #0a0a0a; border-radius: 8px;">
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">Wiring up OpenRouter</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        In Hermes Desktop, open <strong style="color: #FF6B35;">Settings → API Keys</strong> (left sidebar).
-      </div>
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">After signing in</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">openrouter.ai → Keys</h2>
+    <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.6;">
+      Click the <strong>+ New Key</strong> button (top-right of the API Keys page). Give it a memorable name like <code>hermes-laptop</code>. OpenRouter generates a string starting with <code>sk-or-v1-...</code>.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Paste your <code style="font-size: 12px;">sk-or-v1-…</code> key into the <strong style="color: #2C2C2C;">OpenRouter</strong> field. Click <strong style="color: #FF6B35;">Save</strong>.
-      </div>
+    <div class="cl-desc-box" style="background: #FFF4E6; border-left-color: #D9A93B;">
+      <strong>⚠ Copy it now.</strong> OpenRouter only shows the full key once. After you close the dialog, you'll only see the prefix <code>sk-or-v1-3d6...</code>. Paste it into a password manager or a sticky note before moving on.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        In the <strong style="color: #2C2C2C;">Model</strong> dropdown, pick: <code style="font-size: 12px;">openrouter/meta-llama/llama-3.3-70b-instruct:free</code> (or any <code style="font-size: 12px;">:free</code> model).
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Status bar shows <strong style="color: #2C2C2C;">Gateway ready</strong> when the key validates. Now type a prompt in the chat box.
-      </div>
+    <div style="font-size: 11.5px; color: #888; line-height: 1.5; margin-top: 4px;">
+      You can revoke this key any time from the same page.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 3 of 3 · real recording frame · next: first conversation</div>
-
+---
+layout: default
 ---
 
-<div class="cl-ref-id">HM26Q3-CONV-01 · v1</div>
+<div class="cl-ref-id">HM26Q3-S2-005 · v3</div>
 
-# Type the prompt
+# Step 3 — Point Hermes at OpenRouter
 
-Type at the bottom of the chat box. Hit Enter. The agent takes it from there — installing tools, reading files, generating output.
-
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/conversation-steps/01-prompt-typed.png" style="display: block; width: 100%; height: auto;" />
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="display: flex; flex-direction: column; gap: 10px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">Open PowerShell or Windows Terminal</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">One command, three settings</h2>
+    <div style="font-size: 13px; color: #3A3A3A; line-height: 1.55;">
+      The installer added <code>hermes</code> to your PATH. Run these three commands in order. The first writes the base URL, the second writes your API key, the third picks the model.
+    </div>
+    <div style="background: #1E1E1E; color: #E6E6E6; border-radius: 10px; padding: 16px 18px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; line-height: 1.85;">
+      <div><span style="color: #5EC4A8;">PS&gt;</span> hermes config set model.base_url https://openrouter.ai/api/v1</div>
+      <div><span style="color: #5EC4A8;">PS&gt;</span> hermes config set model.api_key <span style="color: #D9A93B;">sk-or-v1-...</span></div>
+      <div><span style="color: #5EC4A8;">PS&gt;</span> hermes config set model.default <span style="color: #FF8C42;">tencent/hunyuan-a13b-instruct:free</span></div>
+    </div>
+    <div style="font-size: 11.5px; color: #888; line-height: 1.5; margin-top: 4px;">
+      Paste your actual key in place of <code>sk-or-v1-...</code>. The third line picks the default model — swap to Llama 3.3 70B or Qwen 2.5 72B any time.
+    </div>
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">What you're seeing</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Chat box at the top: <em>"Use this pdf to create 1 nos powerpoint slide to introduce the smart watch."</em>
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">What each line does</div>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #FF6B35; font-weight: 700;">model.base_url</div>
+      <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5;">
+        Tells Hermes where to send requests. OpenRouter's URL is fixed; never paste your provider's URL here.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Sidebar left: pinned <strong style="color: #2C2C2C;">Use this pdf to create 1 nos...</strong> session. Earlier sessions visible above.
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #FF6B35; font-weight: 700;">model.api_key</div>
+      <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5;">
+        Your OpenRouter secret key. Stored in <code>~/.hermes/config.yaml</code>, file mode 0600 (owner-only).
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        First tool run: <em>Running code</em> <code style="font-size: 12px;">import subprocess, sys, path = r'C:\Users\TCL13\Downloads\InforSMART_Performan…</code>
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #FF6B35; font-weight: 700;">model.default</div>
+      <div style="font-size: 12px; color: #3A3A3A; line-height: 1.5;">
+        Which model runs by default. The format is <code>provider/model-name</code> — OpenRouter uses its own slug names.
       </div>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Thinking: <em>"Need to install PDF extraction and check Node/pptxgenjs. Let me set those up."</em>
-      </div>
+    <div style="font-size: 11.5px; color: #888; line-height: 1.5;">
+      Verify with <code>hermes config</code> — it prints all settings, so you can confirm each one landed.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 8 of 8 · real recording frame · next: agent installs tools</div>
-
+---
+layout: section
 ---
 
-<div class="cl-ref-id">HM26Q3-CONV-02 · v1</div>
+<div class="cl-ref-id">HM26Q3-S3-001 · v3</div>
 
-# Agent installs missing tools
+<div style="position: absolute; inset: 0; background: linear-gradient(135deg, #4FA85C 0%, #6BB57A 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
 
-The agent self-installs what it needs: <code>pymupdf</code> for PDF, <code>pptxgenjs</code> + <code>react</code> for the slide. You watch, it works.
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 24px;">
+  STEP 3 OF 4
+</div>
 
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/conversation-steps/02-pptxgenjs-install.png" style="display: block; width: 100%; height: auto;" />
+<h1 style="font-size: 64px; font-weight: 800; color: white; margin: 0; letter-spacing: -1.5px; line-height: 1.1;">
+  Pick a free model
+</h1>
+
+<div style="font-size: 20px; color: white; opacity: 0.9; margin-top: 28px; max-width: 620px; line-height: 1.4;">
+  Three solid choices. Pick one and ship.
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-S3-002 · v3</div>
+
+# Three free models worth trying
+
+<div style="font-size: 13px; color: #5A5A5A; margin-top: -4px; margin-bottom: 16px; max-width: 720px;">
+  All three run on OpenRouter's free tier. Pick one as <code>model.default</code>, swap any time. Speed and quality both vary — try all three for the same prompt and pick what fits your work.
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 8px;">
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #4FA85C;">
+    <div class="cl-eyebrow" style="color: #4FA85C;">RECOMMENDED DEFAULT</div>
+    <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: #2C2C2C;">Tencent Hy3</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4; word-break: break-all;">
+      tencent/hunyuan-a13b-instruct:free
+    </div>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
+      Strong on English &amp; Chinese, fast, the most generous free quota of the three. Good all-rounder for daily chat and short code tasks.
+    </div>
+    <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px;">
+      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Multilingual</span>
+      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Fast</span>
+    </div>
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">What the agent did</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Read the PDF: <em>"PAGES: ", doc.page_count</em> — 4 pages, each with title + body text printed.
-      </div>
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #3974C5;">
+    <div class="cl-eyebrow" style="color: #3974C5;">HEAVY THINKING</div>
+    <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: #2C2C2C;">Meta Llama 3.3 70B</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4; word-break: break-all;">
+      meta-llama/llama-3.3-70b-instruct:free
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Installed <code style="font-size: 12px;">pptxgenjs</code> via npm (3.0s) — the JS PowerPoint library.
-      </div>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
+      Best free model for English reasoning and code. Slower than Hy3, but more careful. Use this for multi-step agent work.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Installed <code style="font-size: 12px;">react react-dom react-icons sharp</code> (5.4s) — for a richer-looking slide with vector icons.
-      </div>
+    <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px;">
+      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Reasoning</span>
+      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Code</span>
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Thinking: <em>"Got the full content. Now I'll build one polished slide. Let me install icon tooling for a richer look, then generate."</em>
-      </div>
+  </div>
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #D0832F;">
+    <div class="cl-eyebrow" style="color: #D0832F;">LIGHTWEIGHT</div>
+    <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: #2C2C2C;">Qwen 2.5 72B</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4; word-break: break-all;">
+      qwen/qwen-2.5-72b-instruct:free
+    </div>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
+      Excellent for code generation and tool use. Sometimes rate-limited during peak hours; keep Hy3 or Llama as backup.
+    </div>
+    <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px;">
+      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Coding</span>
+      <span style="font-size: 10px; padding: 3px 8px; background: #F4F4F4; border-radius: 4px; color: #555;">Tool use</span>
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 9 of 9 · real recording frame · next: write the slide script</div>
+<div class="cl-desc-box" style="margin-top: 24px;">
+  <strong>Change later, easily.</strong> Run <code>hermes model</code> at any time — an interactive picker lists every model you've used and lets you switch with one keystroke.
+</div>
 
 ---
+layout: section
+---
 
-<div class="cl-ref-id">HM26Q3-CONV-03 · v1</div>
+<div class="cl-ref-id">HM26Q3-S4-001 · v3</div>
 
-# Write the slide script
+<div style="position: absolute; inset: 0; background: linear-gradient(135deg, #D0832F 0%, #E8A656 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
 
-The agent generates <code>extract_pdf.py</code>, a pptxgenjs script, then converts PPTX → PNG via <code>soffice --headless</code>. Two sub-steps, one tool run.
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 4px; opacity: 0.85; margin-bottom: 24px;">
+  STEP 4 OF 4
+</div>
 
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/conversation-steps/03-pptx-script.png" style="display: block; width: 100%; height: auto;" />
+<h1 style="font-size: 64px; font-weight: 800; color: white; margin: 0; letter-spacing: -1.5px; line-height: 1.1;">
+  Your first chat
+</h1>
+
+<div style="font-size: 20px; color: white; opacity: 0.9; margin-top: 28px; max-width: 620px; line-height: 1.4;">
+  Launch the desktop app and see it work.
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-S4-002 · v3</div>
+
+# Launch Hermes Desktop
+
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="position: relative; display: flex; flex-direction: column; border: 1px solid #eadfd8; border-radius: 16px; box-shadow: 0 10px 24px rgba(92,68,56,.10); background: #fff; padding: 10px; overflow: hidden; min-height: 0; height: 100%;">
+    <div style="position: absolute; top: 14px; left: 14px; z-index: 2;">
+      <span class="cl-image-pill">⑦ DESKTOP UI</span>
+    </div>
+    <img src="/images/07-desktop-chat.png" style="width: 100%; height: 100%; object-fit: contain; background: #fafafa; border-radius: 8px;">
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">The agent's pipeline</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Wrote <code style="font-size: 12px;">extract_pdf.py</code> — uses pymupdf to dump each page's title + body (1.4s).
-      </div>
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">Three ways to open it</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">Start menu, terminal, or CLI</h2>
+    <div style="font-size: 13px; color: #3A3A3A; line-height: 1.55;">
+      <strong>① Start menu</strong> → search "Hermes" → click the desktop icon.<br>
+      <strong>② Terminal</strong> → type <code>hermes desktop</code> and hit Enter.<br>
+      <strong>③ CLI-only</strong> → type <code>hermes</code> for the in-terminal chat UI (lighter on memory).
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Wrote <code style="font-size: 12px;">slide.js</code> with pptxgenjs — picks an icon for each feature (GPS · Body Temp · G-sensor · Notification · SOS), builds the layout.
-      </div>
+    <div class="cl-desc-box">
+      <strong>The screenshot on the left</strong> is a real session. Sidebar: <code>New session</code> / <code>Capabilities</code> / <code>Messaging</code> / <code>Artifacts</code>. Bottom-right shows the active model. The chat is streaming — you'll see <code>Thinking</code> → <code>Skill View</code> → tool calls → final reply.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Rendered PPTX → PNG via LibreOffice headless (3.2s).
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Thinking: <em>"Let me assign"</em> — assigning each icon to the 5 features on the slide.
-      </div>
+    <div style="font-size: 11.5px; color: #888; line-height: 1.5;">
+      First launch takes ~10 seconds while the backend warms up. You can keep the app open across sessions — it'll remember everything.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 10 of 10 · real recording frame · next: subagent QA</div>
-
+---
+layout: default
 ---
 
-<div class="cl-ref-id">HM26Q3-CONV-04 · v1</div>
+<div class="cl-ref-id">HM26Q3-S4-003 · v3</div>
 
-# Subagent QA
+# Type your first prompt
 
-The agent delegates visual inspection to a <strong style="color: #FF6B35;">subagent</strong> (badge top-left: <em>1 Subagent</em>). It checks the rendered PNG against the PDF and confirms the slide looks right.
+<div style="display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; margin-top: 6px; height: 460px; overflow: hidden; grid-template-rows: minmax(0, 1fr);">
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">Try one of these</div>
+    <h2 style="margin: 0; font-size: 22px; line-height: 1.25;">Three prompts that show off what Hermes can do</h2>
+    <div style="font-size: 12px; color: #5A5A5A; line-height: 1.5;">
+      The agent will think for a few seconds, possibly call a tool, and stream a reply back. The first one is a warm-up; the second and third show real tool use.
+    </div>
 
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/conversation-steps/04-subagent-qa.png" style="display: block; width: 100%; height: auto;" />
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 10px; font-weight: 700; color: white; background: #4FA85C; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">EASY</span>
+        <strong style="font-size: 13.5px; color: #2C2C2C;">Warm-up chat</strong>
+      </div>
+      <div style="font-style: italic; font-size: 13px; color: #3A3A3A; line-height: 1.5;">
+        "Explain in 3 sentences what you can do that a normal chatbot can't."
+      </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 10px; font-weight: 700; color: white; background: #3974C5; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">TOOL USE</span>
+        <strong style="font-size: 13.5px; color: #2C2C2C;">Read a file</strong>
+      </div>
+      <div style="font-style: italic; font-size: 13px; color: #3A3A3A; line-height: 1.5;">
+        "Read <code>~/.hermes/config.yaml</code> and tell me what model is set as default."
+      </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 10px; font-weight: 700; color: white; background: #7C3AED; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">MULTI-STEP</span>
+        <strong style="font-size: 13.5px; color: #2C2C2C;">Run a real task</strong>
+      </div>
+      <div style="font-style: italic; font-size: 13px; color: #3A3A3A; line-height: 1.5;">
+        "Create a folder called <code>notes/</code> on my Desktop and inside it write a file <code>today.md</code> with the current date and a 3-bullet to-do list I can edit."
+      </div>
+    </div>
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">Delegation pattern</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        The agent spawns a subagent to read the rendered PNG and verify icon-text alignment, font sizing, contrast.
-      </div>
+  <div style="display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 0;">
+    <div class="cl-eyebrow">What's happening under the hood</div>
+    <h2 style="margin: 0; font-size: 20px; line-height: 1.25;">It's not just chat</h2>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55;">
+      When you ask Hermes to read or write files, it calls tools — not just text generation. You'll see lines like <code>Skill View 72ms</code> or <code>Running code import subprocess, sys</code> scroll past as it works.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Top-left badge: <strong style="color: #FF6B35;">1 Subagent</strong> — Hermes Agent's parallel-agent capability.
-      </div>
+    <div class="cl-desc-box">
+      <strong>You stay in control:</strong> by default Hermes asks before running any shell command that looks destructive (deletes files, force-pushes, etc.). You see the command, you approve or deny.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Status bar: <em>Running 3:02 · Session 3:04</em>. Bottom-right: <em>v0.18.2.98cadad</em>.
-      </div>
-    </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        If the subagent finds issues, it tells the main agent — the slide gets refined and re-rendered.
-      </div>
+    <div style="font-size: 11.5px; color: #888; line-height: 1.5;">
+      Want to skip approvals? Add <code>--yolo</code> to the launch command. Not recommended for a first run.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">Step 11 of 11 · real recording frame · next: final result</div>
-
+---
+layout: default
 ---
 
-<div class="cl-ref-id">HM26Q3-CONV-05 · v1</div>
+<div class="cl-ref-id">HM26Q3-TRB-001 · v3</div>
 
-# Final result — the slide is ready
+# Three things that go wrong (and how to fix them)
 
-The agent delivers the final PowerPoint slide: <strong style="color: #FF6B35;">SMART WATCH 4G — IP67 Intrinsically Safe</strong>, with feature icons (GPS · Body Temp · G-sensor · Notification · SOS) and the product spec table.
-
-<div class="grid grid-cols-5 gap-5" style="margin-top: 18px;">
-  <div style="grid-column: span 3; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-    <img src="/conversation-steps/05-final-slide.png" style="display: block; width: 100%; height: auto;" />
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 28px;">
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #D8556A;">
+    <div class="cl-eyebrow" style="color: #D8556A;">ERROR</div>
+    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">"HTTP 400: No models provided"</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4;">
+      <strong>Cause:</strong> <code>config.yaml</code> saved with a UTF-8 BOM (Notepad does this).
+    </div>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
+      Re-save as UTF-8 <em>without</em> BOM. Run <code>hermes config edit</code> — it writes cleanly.
+    </div>
   </div>
-  <div style="grid-column: span 2;">
-    <div class="cl-eyebrow" style="margin-bottom: 10px;">What's on the slide</div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">1</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Hero: <strong style="color: #FF6B35;">SMART WATCH 4G</strong> with the <em>IP67 Intrinsically Safe</em> safety badge.
-      </div>
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #D9A93B;">
+    <div class="cl-eyebrow" style="color: #D9A93B;">SLOW</div>
+    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">First reply takes 30+ seconds</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4;">
+      <strong>Cause:</strong> OpenRouter is cold-starting the model, or you're rate-limited.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">2</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        5 feature icons: <strong style="color: #2C2C2C;">GPS · Body Temp · G-sensor · Notification · SOS</strong> — each with an icon + short label.
-      </div>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
+      Wait. If it persists past a minute, switch model with <code>hermes model</code> and try a different free model.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-      <span class="cl-num-badge">3</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Spec table on the right with the full product specs.
-      </div>
+  </div>
+  <div class="cl-card-white" style="display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #3974C5;">
+    <div class="cl-eyebrow" style="color: #3974C5;">STUCK</div>
+    <h3 style="margin: 0; font-size: 16px; font-weight: 700; color: #2C2C2C;">Agent hangs on a tool call</h3>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #888; line-height: 1.4;">
+      <strong>Cause:</strong> network timeout, or the model is stuck waiting on you.
     </div>
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span class="cl-num-badge">4</span>
-      <div style="font-size: 13.5px; color: #3A3A3A; line-height: 1.5; padding-top: 2px;">
-        Output saved as <code style="font-size: 12px;">InforSMART_…smart_watch_slide.pptx</code>. Download link in the chat.
-      </div>
+    <div style="font-size: 12.5px; color: #3A3A3A; line-height: 1.55; flex: 1;">
+      In the desktop app: press <strong>Esc</strong> or click the stop button. In the CLI: <code>Ctrl+C</code>. Then <code>/retry</code> to send the prompt again.
     </div>
   </div>
 </div>
 
-<div class="cl-footer-meta">End of demo · real recording · thank you</div>
-
----
-
-<div class="cl-ref-id">HM26Q3-END-001 · v1</div>
-
-# Q&A
-
-You watched the entire end-to-end flow on Windows: install Hermes Desktop, set up OpenRouter, and watch the agent build a real PowerPoint slide from a PDF — in under 30 minutes of recording.
-
-<div style="margin-top: 30px; padding: 24px 28px; background: #FFE9DA; border-left: 4px solid #FF6B35; border-radius: 8px;">
-  <h3 style="margin: 0 0 8px; font-size: 17px; color: #FF6B35;">Where to go next</h3>
-  <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; color: #2C2C2C;">
-    <li><a href="https://hermes-agent.nousresearch.com/docs" target="_blank" style="color: #FF6B35; font-weight: 600;">Full docs</a> · every command, every provider, every MCP server</li>
-    <li><a href="https://openrouter.ai/models" target="_blank" style="color: #FF6B35; font-weight: 600;">AI Providers</a> · 30+ providers including OpenRouter, Anthropic, Google, GitHub Copilot</li>
-    <li><a href="https://hermes-agent.nousresearch.com/docs/user-guide/features/skills" target="_blank" style="color: #FF6B35; font-weight: 600;">Skills System</a> · reusable workflows like the PowerPoint one we just used</li>
-    <li><a href="https://hermes-agent.nousresearch.com/docs/user-guide/messaging/" target="_blank" style="color: #FF6B35; font-weight: 600;">Messaging Gateway</a> · Telegram, Discord, Slack, WhatsApp, Signal, Email, Teams</li>
-    <li><a href="https://hermes-agent.nousresearch.com/docs/getting-started/quickstart" target="_blank" style="color: #FF6B35; font-weight: 600;">Quickstart</a> · the full text version of what we covered</li>
-  </ul>
+<div class="cl-desc-box" style="margin-top: 24px;">
+  <strong>Still broken?</strong> Run <code>hermes doctor</code> — it checks every dependency and config value, and tells you exactly what's wrong.
 </div>
 
-<div class="cl-footer-meta">19 slides · recorded live on Windows · Charles Lo · 2026-07</div>
+---
+layout: default
+---
+
+<div class="cl-ref-id">HM26Q3-END-001 · v3</div>
+
+# You're set up
+
+<div style="font-size: 18px; color: #3A3A3A; line-height: 1.55; margin-top: 8px; max-width: 720px;">
+  You have Hermes Desktop running on Windows, pointed at OpenRouter's free tier, and you've sent it a prompt. Everything else is upside.
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 28px;">
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+    <div class="cl-eyebrow">LEVEL 2 — SKILLS</div>
+    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Teach it your workflow</h3>
+    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
+      <code>hermes skills browse</code> installs community skills (Telegram bots, PDF readers, etc.). One command, restart, done.
+    </div>
+  </div>
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+    <div class="cl-eyebrow" style="color: #7C3AED;">LEVEL 3 — MEMORY</div>
+    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">It remembers next session</h3>
+    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
+      <code>/memory</code> stores facts about you. Tell it "I use VS Code" once, never again.
+    </div>
+  </div>
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+    <div class="cl-eyebrow" style="color: #4FA85C;">LEVEL 4 — MESSAGING</div>
+    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Run it on Telegram / Discord</h3>
+    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
+      <code>hermes gateway setup</code> connects 20+ chat platforms. Same agent, different surface.
+    </div>
+  </div>
+  <div class="cl-card" style="display: flex; flex-direction: column; gap: 10px;">
+    <div class="cl-eyebrow" style="color: #D0832F;">LEVEL 5 — CRON</div>
+    <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Schedule it to run</h3>
+    <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
+      <code>hermes cron create</code> makes the agent run on a timer. Morning briefings, weekly cleanups.
+    </div>
+  </div>
+</div>
+
+<div style="text-align: center; margin-top: 40px; font-size: 16px; color: #5A5A5A;">
+  Type <code>/help</code> in the chat any time. It lists every command, skill, and setting.
+</div>
+
+<div style="position: absolute; bottom: 28px; left: 50px; font-size: 11px; color: #999;">
+  HM26Q3 · 19 slides · ~30 minutes · Hermes Agent v0.18+
+</div>
