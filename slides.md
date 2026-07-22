@@ -66,7 +66,7 @@ layout: default
       <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #2C2C2C;">Set up OpenRouter</h3>
     </div>
     <div style="font-size: 13px; color: #5A5A5A; line-height: 1.55;">
-      Create an OpenRouter account, generate an API key, point Hermes at it via <code>hermes config</code>. Free tier covers dozens of models.
+      Create a free account on openrouter.ai, generate one API key, then paste it into the Hermes Desktop wizard. One key covers 200+ models.
     </div>
   </div>
   <div class="cl-card-white">
@@ -360,6 +360,10 @@ layout: default
     </div>
     <div style="font-size: 11.5px; color: #888; line-height: 1.5; margin-top: 4px;">
       Time: 30 seconds · No credit card · Email-only signup works on mobile too.
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #FFFFFF; border: 1px solid #FF6B35; border-radius: 10px; margin-top: 4px;">
+      <span style="font-size: 12px; color: #3A3A3A;">Don't want to type the URL?</span>
+      <a href="https://openrouter.ai/" target="_blank" rel="noopener" style="display: inline-block; padding: 7px 14px; background: #FF6B35; color: white; border-radius: 6px; font-size: 11.5px; font-weight: 600; text-decoration: none; letter-spacing: 0.3px;">Open OpenRouter ↗</a>
     </div>
   </div>
 </div>
